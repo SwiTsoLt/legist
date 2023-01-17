@@ -1,0 +1,19 @@
+:root {
+    --main-color-gray: #495361;
+    --main-color-yellow: #eccfa8;
+    --main-color-white: #fcf8f4;
+
+    --black-wall: #00000050;
+    --white-wall: #ffffffaa;
+    --text-color: #303050;
+
+    --border-radius: 8px;
+
+    --padding-s: 10px;
+    --padding-m: 20px;
+    --padding-l: 30px;
+
+    --scrollbar-track-color: #6c7583;
+    --scrollbar-thumb-color: #3e4652;
+    --scrollbar-thumb-color-hover: #3a414d;
+}
