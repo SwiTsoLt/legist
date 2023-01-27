@@ -1,11 +1,13 @@
 :root {
     --main-color-gray: #495361;
     --main-color-yellow: #eccfa8;
-    --main-color-white: #fcf8f4;
+    --main-color-green: #1FC1A2;
 
     --black-wall: #00000050;
     --white-wall: #ffffffaa;
-    --text-color: #303050;
+    
+    --text-color-black: #303050;
+    --text-color-white: #fcf8f4;
 
     --border-radius: 8px;
 
