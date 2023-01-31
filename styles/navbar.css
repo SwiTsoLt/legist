@@ -2,12 +2,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 70px;
-  background-color: #00000080;
+  background-color: var(--main-color-gray);
+  border-bottom: 2px solid var(--main-color-yellow);
   z-index: 999;
 }
 
@@ -24,9 +22,9 @@ nav {
 
 nav > .nav_container > .logo {
   position: relative;
-  width: fit-content;
+  min-width: 250px;
   height: 100%;
-  padding: calc(var(--padding-s) * 1.5);
+  padding: var(--padding-s);
 }
 
 nav > .nav_container > .logo > a {
@@ -66,15 +64,8 @@ nav > .nav_container > .logo > a {
 
 .logo_text {
   position: relative;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: fit-content;
+  width: 100%;
   height: 100%;
-  text-align: left;
-  font-size: 0.7em;
-  line-height: 1.2em;
-  color: transparent;
   font-weight: bold;
   background: url("../media/navbar/wood-darken-wall.png");
   background-position: 0 80px;
@@ -87,6 +78,18 @@ nav > .nav_container > .logo > a {
   transition: background-position 0.8s ease;
 }
 
+.logo_text > p {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-size: 0.7em;
+  line-height: 1.2em;
+  color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
 nav > .nav_container > .logo:hover > a > .logo_text,
 nav > .nav_container > .logo:hover > a > .logo_icon {
   background-position: center;
@@ -96,13 +99,13 @@ nav > .nav_container > .logo:hover > a > .logo_icon {
 
 .links {
   display: flex;
-  width: fit-content;
+  width: 100%;
   height: 100%;
 }
 
 .link {
   position: relative;
-  width: 200px;
+  width: 100%;
   height: 100%;
   transition: background-color 0.2s ease;
 }
@@ -113,15 +116,21 @@ nav > .nav_container > .logo:hover > a > .logo_icon {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
+  height: 100%;
   background-color: var(--main-color-yellow);
-  transform: scaleX(0);
-  /* transform-origin: left; */
+  transform: scaleY(0);
+  transform-origin: bottom;
   transition: all 0.2s ease-out;
+  z-index: -1;
+}
+
+.link:hover > a {
+  color: var(--main-color-gray);
+  font-weight: bold;
 }
 
 .link:hover::after {
-  transform: scaleX(1);
+  transform: scaleY(1);
 }
 
 .link > a {
@@ -131,4 +140,5 @@ nav > .nav_container > .logo:hover > a > .logo_icon {
   width: 100%;
   height: 100%;
   color: var(--text-color-white);
+  transition: all 0.2s ease;
 }
