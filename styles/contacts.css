@@ -1,7 +1,97 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    min-height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  background-color: var(--main-color-gray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-gap: calc(var(--padding-l) * 2);
+  width: 100%;
+  height: var(--header-height);
+  max-width: var(--max-width);
+  padding: var(--padding-l);
+}
+
+header {
+  width: 100%;
+  height: fit-content;
+}
+
+header > .title {
+  width: 100%;
+  height: fit-content;
+}
+
+header > .title > h1 {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  grid-gap: var(--padding-s);
+  width: 100%;
+  height: fit-content;
+}
+
+.address, .phone {
+  display: flex;
+  align-items: center;
+  grid-gap: var(--padding-s);
+}
+
+.address > .icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("../media/contacts/map-marker.svg");
+}
+
+.phone > .icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("../media/contacts/phone.svg");
+}
+
+.phone > .text > p > a {
+  padding: 0 0 2px 0;
+  border-bottom: 2px dashed var(--main-color-yellow);
+  transition: border-color 0.2s ease;
+}
+
+.phone > .text > p > a:hover {
+  border-color: var(--main-color-green);
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  border-left: 2px solid var(--main-color-yellow);
+  padding: 0 var(--padding-l);
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: var(--border-radius);
+}

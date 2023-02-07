@@ -20,7 +20,7 @@ main > .line {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  width: 70px;
+  width: var(--navbar-height);
   height: 100vh;
   background-color: var(--main-color-yellow);
   z-index: 100;
@@ -109,15 +109,15 @@ section.this > .side > .consultation > .list > ul > li > .icon {
 }
 
 section.this > .side > .consultation > .list > ul > li:nth-child(1) > .icon {
-  background-image: url("../media/consultation/certificate.png");
+  background-image: url("../media/consultation/certificate.svg");
 }
 
 section.this > .side > .consultation > .list > ul > li:nth-child(2) > .icon {
-  background-image: url("../media/consultation/check-list.png");
+  background-image: url("../media/consultation/check-list.svg");
 }
 
 section.this > .side > .consultation > .list > ul > li:nth-child(3) > .icon {
-  background-image: url("../media/consultation/time.png");
+  background-image: url("../media/consultation/time.svg");
 }
 
 section.this > .side > .consultation > .text {
@@ -127,7 +127,7 @@ section.this > .side > .consultation > .text {
 
 section.this > .side > .consultation > .text > p {
   text-align: justify;
-  line-height: 1.6em;
+  line-height: var(--line-height);
 }
 
 section.this > .side > .br {
@@ -158,7 +158,7 @@ section.this > .side > .create > .text {
 
 section.this > .side > .create > .text > p {
   text-align: justify;
-  line-height: 1.6em;
+  line-height: var(--line-height);
 }
 
 /* Team */
@@ -208,7 +208,7 @@ section.team > .container > .side > .info_container > .info > .title {
 
 section.team > .container > .side > .info_container > .info > .text > p {
   text-align: justify;
-  line-height: 1.6em;
+  line-height: var(--line-height);
 }
 
 /* Questions */
@@ -258,7 +258,7 @@ section.questions > .container > .side > .info_container > .info > .title {
 
 section.questions > .container > .side > .info_container > .info > .text > p {
   text-align: justify;
-  line-height: 1.6em;
+  line-height: var(--line-height);
 }
 
 /* Experience */
@@ -308,5 +308,5 @@ section.experience > .container > .side > .info_container > .info > .title {
 
 section.experience > .container > .side > .info_container > .info > .text > p {
   text-align: justify;
-  line-height: 1.6em;
+  line-height: var(--line-height);
 }

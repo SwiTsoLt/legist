@@ -18,4 +18,10 @@
     --scrollbar-track-color: #6c7583;
     --scrollbar-thumb-color: #3e4652;
     --scrollbar-thumb-color-hover: #3a414d;
+
+    --max-width: 1200px;
+    --navbar-height: 70px;
+    --header-height: calc(100vh - var(--navbar-height));
+
+    --line-height: 1.6em;
 }

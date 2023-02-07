@@ -3,7 +3,7 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70px;
+  height: var(--navbar-height);
   background-color: var(--main-color-gray);
   border-bottom: 2px solid var(--main-color-yellow);
   z-index: 999;
@@ -15,7 +15,8 @@ nav {
   align-items: center;
   width: 100%;
   height: 100%;
-  max-width: 900px;
+  max-width: var(--max-width);
+  padding: 0 var(--padding-l);
 }
 
 /* Logo */
