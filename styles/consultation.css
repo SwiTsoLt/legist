@@ -310,3 +310,40 @@ section.experience > .container > .side > .info_container > .info > .text > p {
   text-align: justify;
   line-height: var(--line-height);
 }
+
+@media screen and (max-width: 1000px) {
+  section {
+    border-top: 2px solid var(--main-color-yellow);
+  }
+
+  section:nth-child(2) {
+    border: none;
+  }
+
+  section,  section > .container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  section:nth-child(2n) .side:last-child {
+    display: none;
+  }
+
+  section:nth-child(2n + 1) .side:first-child {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .title, .text, .list {
+    padding: 0 var(--padding-l);
+  }
+
+  .info, .text {
+    width: 100% !important;
+  }
+}

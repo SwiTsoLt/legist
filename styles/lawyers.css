@@ -4,6 +4,7 @@
   width: 100%;
   height: fit-content;
   min-height: 100vh;
+  background-color: var(--main-color-gray);
 }
 
 main {
@@ -12,29 +13,31 @@ main {
   width: 100%;
   height: 100%;
   min-height: var(--header-height);
-  background-color: var(--main-color-gray);
 }
 
 .lawyerListContainer {
   display: flex;
   flex-direction: column;
-  grid-gap: var(--padding-s);
+  grid-gap: var(--padding-l);
   width: 100%;
   height: 100%;
   max-width: var(--max-width);
-  padding: var(--padding-l) var(--padding-l) 0 var(--padding-l);
+  padding: var(--padding-l);
 }
 
 .zav {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: var(--padding-l);
   width: 100%;
-  height: 220px;
+  height: fit-content;
 }
 
 .zav > .avatar {
+  position: relative;
   width: calc(var(--max-width) * 21 / 100 + var(--padding-l));
   height: 100%;
+  min-height: 220px;
   background-image: url("../media/lawyers/martsinkevich-oleg-igorevich.jpg");
   background-size: cover;
   border-radius: var(--border-radius);
@@ -42,27 +45,42 @@ main {
 
 .zav > .avatar > a {
   display: flex;
+  align-items: flex-end;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.zav > .avatar > a > p {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   background-color: #00000080;
-  border-radius: var(--border-radius);
-  filter: brightness(1);
-  font-weight: bold;
   opacity: 0;
-  transition: all 0.8s ease;
+  transition: opacity 0.8s ease;
 }
 
-.zav > .avatar:hover > a {
+.zav > .avatar:hover > a > p {
+  opacity: 1;
+}
+
+.zav > .avatar:hover > a > p {
   opacity: 1;
 }
 
 .zav > .text {
+  flex: 1 0 50%;
   width: 100%;
   max-width: 480px;
+  min-width: 260px;
   height: 100%;
-  padding: 0 var(--padding-l);
 }
 
 .zav > .text > p {
@@ -76,21 +94,25 @@ main {
   width: 100%;
   height: fit-content;
   min-height: inherit;
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
 .lawyerList > .lawyer {
   position: relative;
   flex: 1 0 21%;
   width: 100%;
-  height: 220px;
+  height: auto;
+  min-width: 260px;
+  min-height: 220px;
+  aspect-ratio: 4/3;
   background-size: cover;
   transition: all 0.8s ease;
 }
 
 .lawyerList > .lawyer > a {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -98,24 +120,30 @@ main {
   width: 100%;
   height: 100%;
   white-space: nowrap;
-  background-color: #00000080;
-  filter: brightness(1);
   font-weight: bold;
+}
+
+.lawyerList > .lawyer > a > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
   opacity: 0;
-  transition: all 0.8s ease;
+  transition: opacity 0.8s ease;
 }
 
 .lawyerList > .lawyer:hover {
   flex: 1 0 26%;
 }
 
-.lawyerList > .lawyer:hover > a {
+.lawyerList > .lawyer:hover > a > p {
   opacity: 1;
 }
 
 .lawyerList > .lawyer:nth-child(1) {
   background-image: url("https://legist.by/images/advokaty/Kos860645.jpg");
-  border-radius: var(--border-radius) 0 0 0;
 }
 .lawyerList > .lawyer:nth-child(2) {
   background-image: url("https://legist.by/images/advokaty/degt-1.jpg");
@@ -125,7 +153,6 @@ main {
 }
 .lawyerList > .lawyer:nth-child(4) {
   background-image: url("https://legist.by/images/advokaty/860645.jpg");
-  border-radius: 0 var(--border-radius) 0 0;
 }
 .lawyerList > .lawyer:nth-child(5) {
   background-image: url("https://legist.by/images/advokaty/zul-1.jpg");
@@ -141,7 +168,6 @@ main {
 }
 .lawyerList > .lawyer:nth-child(9) {
   background-image: url("https://legist.by/images/advokaty/pil-1.jpg");
-  border-radius: 0 0 0 var(--border-radius);
 }
 .lawyerList > .lawyer:nth-child(10) {
   background-image: url("https://legist.by/images/advokaty/avch-1.jpg");
@@ -151,21 +177,13 @@ main {
 }
 .lawyerList > .lawyer:nth-child(12) {
   background-image: url("https://legist.by/images/advokaty/mag-1.jpg");
-  border-radius: 0 0 var(--border-radius) 0;
 }
 
-.lawyerList > .lawyer:nth-child(1) > a {
-  border-radius: var(--border-radius) 0 0 0;
-}
-
-.lawyerList > .lawyer:nth-child(4) > a {
-  border-radius: 0 var(--border-radius) 0 0;
-}
-
-.lawyerList > .lawyer:nth-child(9) > a {
-  border-radius: 0 0 0 var(--border-radius);
-}
-
-.lawyerList > .lawyer:nth-child(12) > a {
-  border-radius: 0 0 var(--border-radius) 0;
+@media screen and (max-width: 1000px) {
+  .zav > .avatar > a > p,
+  .lawyerList > .lawyer > a > p {
+    height: fit-content;
+    opacity: 1;
+    padding: var(--padding-m) 0;
+  }
 }

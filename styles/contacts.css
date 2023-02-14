@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  grid-gap: var(--padding-l);
   width: 100%;
   height: fit-content;
   min-height: 100vh;
@@ -22,6 +22,7 @@
 header {
   width: 100%;
   height: fit-content;
+  padding: var(--padding-l) 0;
 }
 
 header > .title {
@@ -94,4 +95,20 @@ main {
   height: auto;
   aspect-ratio: 1/1;
   border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: fit-content;
+  }
+  
+  main {
+    grid-template-columns: none;
+    grid-gap: var(--padding-l);
+  }
+
+  .map {
+    border: none;
+    padding: 0;
+  }
 }
