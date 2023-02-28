@@ -12,7 +12,8 @@ main {
   width: 100%;
   height: 100%;
   background-color: var(--main-color-gray);
-  padding: 0 var(--padding-l);
+  padding:  var(--padding-l);
+  padding-top: var(--navbar-height);
 }
 
 .container {

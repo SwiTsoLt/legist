@@ -4,7 +4,7 @@
     --main-color-green: #1FC1A2;
 
     --black-wall: #00000050;
-    --white-wall: #ffffffaa;
+    --white-wall: #ffffff30;
     
     --text-color-black: #303050;
     --text-color-white: #fcf8f4;
@@ -20,7 +20,7 @@
     --scrollbar-thumb-color-hover: #3a414d;
 
     --max-width: 1200px;
-    --navbar-height: 70px;
+    --navbar-height: 120px;
     --header-height: calc(100vh - var(--navbar-height));
 
     --line-height: 1.6em;

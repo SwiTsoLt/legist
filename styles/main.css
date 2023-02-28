@@ -1,21 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
 .wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  min-height: var(--header-height);
+  min-height: 100vh;
 }
 
 /* Header */
 
 header {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: var(--header-height);
+  min-height: 100vh;
 }
 
 .gray_block {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -25,13 +32,13 @@ header {
 }
 
 .line {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
   min-height: var(--header-height);
   background-color: var(--main-color-yellow);
   clip-path: polygon(57% 0, 62% 0, 0 280%, 0 245%);
-  
 }
 
 /* Text */
@@ -39,22 +46,50 @@ header {
 .text_container {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   position: absolute;
-  width: 40%;
+  width: 100%;
   height: 100%;
-  padding: 15% 5%;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   grid-gap: var(--padding-l);
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  max-width: 640px;
+  background-color: var(--white-wall);
+  text-align: justify;
+  padding: var(--padding-l);
+}
+
+.text::before,
+.text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 70%;
+  border: 4px solid var(--main-color-yellow);
+}
+
+.text::before {
+  left: -5%;
+  border-right: none;
+}
+
+.text::after {
+  right: -5%;
+  border-left: none;
+}
+
+.title {
   width: 100%;
   height: 100%;
-  max-width: 640px;
-  min-height: var(--header-height);
-  text-align: justify;
+  z-index: 2;
 }
 
 .title > h1 {
@@ -83,25 +118,72 @@ header {
 
 .shield_icon {
   background-image: url("../media/main/shield.png");
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1/1;
 }
 
-/* Video */
+.contacts_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 0 var(--padding-l);
+}
 
-.video {
+.contacts_link > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--text-color-white);
+  color: var(--text-color-black);
+  font-weight: bold;
+  overflow: hidden;
+  padding: var(--padding-m) calc(var(--padding-l) * 2);
+}
+
+.contacts_link > a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%) scale(0);
+  width: 110%;
+  height: auto;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  transition: all 0.5s ease-in-out;
+}
+
+.contacts_link > a:hover::before {
+  background-color: var(--main-color-yellow);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.contacts_link > a > p {
+  z-index: 1;
+}
+
+/* Bg */
+
+.bg {
   display: flex;
   justify-content: right;
   width: 100%;
   height: 100%;
-  min-height: var(--header-height);
+  min-height: 100vh;
 }
 
-.video > video {
-  width: auto;
-  height: var(--header-height);
-  margin-left: 20%;
-  filter: brightness(0.8);
+.bg > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.6);
   z-index: -1;
 }
 
@@ -161,7 +243,6 @@ header {
     width: 40%;
   }
 }
-
 
 @media screen and (max-width: 1000px) {
   .wrapper {
