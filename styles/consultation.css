@@ -13,12 +13,14 @@ main {
   width: 100%;
   height: fit-content;
   min-height: 100vh;
+  background-color: var(--main-color-gray);
+  padding-top: calc(var(--navbar-height) + var(--padding-l) * 2);
 }
 
 main > .line {
   position: fixed;
   left: 50%;
-  top: 0;
+  top: var(--navbar-height);
   transform: translateX(-50%);
   width: var(--navbar-height);
   height: 100vh;

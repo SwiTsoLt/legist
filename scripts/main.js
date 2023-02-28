@@ -1,16 +1,10 @@
 const navbar = document.querySelector("nav")
-// const handle_button = document.getElementById("handle_button")
+const consultationLine = document.getElementById("consultationLine")
 
-// handle_button.addEventListener("click", () => {
-//     if (navbar.classList.contains("show")) {
-//         navbar.classList.remove("show")
-//         handle_button.classList.remove("active")
-//     } else {
-//         navbar.classList.add("show")
-//         handle_button.classList.add("active")
-//     }
-// })
 function resizeNavbar() {
+    consultationLine.style.top = ((180 - window.pageYOffset) > 0 ? 180 - window.pageYOffset : 0) + "px"
+    console.log(consultationLine.style.top);
+
     if (window.pageYOffset > 100) {
         navbar.classList.add("onscroll")
     } else {
