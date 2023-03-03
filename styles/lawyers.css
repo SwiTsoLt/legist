@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: fit-content;
   min-height: 100vh;
@@ -13,6 +14,7 @@ main {
   justify-content: center;
   width: 100%;
   height: 100%;
+  max-width: calc(100vw - var(--padding-m) * 2);
   min-height: var(--header-height);
 }
 
@@ -28,6 +30,7 @@ main {
 
 .zav {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   grid-gap: var(--padding-l);
   width: 100%;
@@ -36,8 +39,9 @@ main {
 
 .zav > .avatar {
   position: relative;
-  width: calc(var(--max-width) * 21 / 100 + var(--padding-l));
+  width: auto;
   height: 240px;
+  aspect-ratio: 4/3;
   background-image: url("../media/lawyers/martsinkevich-oleg-igorevich.jpg");
   background-size: cover;
   border-radius: var(--border-radius);
@@ -104,7 +108,8 @@ main {
   flex: 1 0 21%;
   width: 100%;
   min-width: 260px;
-  height: 240px;
+  height: auto;
+  aspect-ratio: 4/3;
   background-size: cover;
   transition: all 0.8s ease;
 }
@@ -179,13 +184,25 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
+  .wrapper {
+    padding-top: 0;
+  }     
+
   .zav > .avatar {
-    width: 100%;
     height: 260px;
+  }
+
+  .lawyerList {
+    grid-gap: var(--padding-m);
   }
 
   .lawyerList > .lawyer {
     height: 260px;
+    border-radius: var(--border-radius);
+  }
+
+  .lawyerList > .lawyer > a > p {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
 
   .zav > .avatar > a > p,

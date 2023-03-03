@@ -50,6 +50,7 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
+  padding: var(--padding-l);
 }
 
 .text {
@@ -57,9 +58,10 @@ header {
   flex-direction: column;
   grid-gap: var(--padding-l);
   position: relative;
-  width: 100%;
+  width: 640px;
   height: fit-content;
   max-width: 640px;
+  min-width: 640px;
   background-color: var(--white-wall);
   text-align: justify;
   padding: var(--padding-l);
@@ -264,6 +266,11 @@ header {
   .text {
     height: fit-content;
     min-height: fit-content;
+    min-width: auto;
+  }
+
+  .text::before, .text::after {
+    display: none;
   }
 
   .video {

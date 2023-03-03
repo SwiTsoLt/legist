@@ -166,6 +166,10 @@ main {
 */
 
 @media screen and (max-width: 1000px) {
+  main {
+    padding-top: 0;
+  }
+  
   main > .container {
     grid-template-columns: none;
   }

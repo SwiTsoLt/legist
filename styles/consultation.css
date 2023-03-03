@@ -314,6 +314,10 @@ section.experience > .container > .side > .info_container > .info > .text > p {
 }
 
 @media screen and (max-width: 1000px) {
+  main {
+    padding-top: 0;
+  }
+  
   section {
     border-top: 2px solid var(--main-color-yellow);
   }
