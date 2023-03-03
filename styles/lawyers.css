@@ -30,7 +30,6 @@ main {
 
 .zav {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   grid-gap: var(--padding-l);
   width: 100%;
@@ -187,6 +186,10 @@ main {
   .wrapper {
     padding-top: 0;
   }     
+
+  .zav {
+    justify-content: center;
+  }
 
   .zav > .avatar {
     height: 260px;

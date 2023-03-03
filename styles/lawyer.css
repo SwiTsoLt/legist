@@ -81,95 +81,11 @@ main {
   background-image: url("../media/lawyers/magaryan-ekaterina-pavlovna.jpg");
 }
 
-/*
-.wrapper {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  width: 100%;
-  height: fit-content;
-  min-height: 100vh;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: var(--main-color-gray);
-  padding: 0 var(--padding-l);
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  max-width: var(--max-width);
-  padding: var(--padding-l) 0;
-}
-
-.avatar {
-  width: 50%;
-  height: auto;
-  aspect-ratio: 4/3;
-  max-height: 500px;
-  background-size: cover;
-  border-radius: var(--border-radius);
-  float: left;
-  margin: 0 var(--padding-l) var(--padding-l) 0;
-}
-
-.text > p, h4 {
-  text-align: justify;
-  line-height: var(--line-height);
-}
-
-.avatar.martsinkevich-oleg-igorevich {
-  background-image: url("../media/lawyers/martsinkevich-oleg-igorevich.jpg");
-}
-.avatar.kosik-vladimir-vasilyevich {
-  background-image: url("../media/lawyers/kosik-vladimir-vasilyevich.jpg");
-}
-.avatar.degtyarev-sergey-ivanovich {
-  background-image: url("../media/lawyers/degtyarev-sergey-ivanovich.jpg");
-}
-.avatar.martsinkevich-tatiana-alexandrovna {
-  background-image: url("../media/lawyers/martsinkevich-tatiana-alexandrovna.jpg");
-}
-.avatar.vovchinsky-maxim-gennadyevich {
-  background-image: url("../media/lawyers/vovchinsky-maxim-gennadyevich.jpg");
-}
-.avatar.zylkova-tatiana-viktorovna {
-  background-image: url("../media/lawyers/zylkova-tatiana-viktorovna.jpg");
-}
-.avatar.komel-vadim-gennadyevich {
-  background-image: url("../media/lawyers/komel-vadim-gennadyevich.jpg");
-}
-.avatar.nikolaev-andrei-nikolayevich {
-  background-image: url("../media/lawyers/nikolaev-andrei-nikolayevich.jpg");
-}
-.avatar.hermenchuk-olga-nikolayevna {
-  background-image: url("../media/lawyers/hermenchuk-olga-nikolayevna.jpg");
-  background-position: top;
-}
-.avatar.pilinkevich-nikolay-nikolayevich {
-  background-image: url("../media/lawyers/pilinkevich-nikolay-nikolayevich.jpg");
-}
-.avatar.avchinko-dmitry-leonidovich {
-  background-image: url("../media/lawyers/avchinko-dmitry-leonidovich.jpg");
-}
-.avatar.rapinchuk-anastasia-viktorovna {
-  background-image: url("../media/lawyers/rapinchuk-anastasia-viktorovna.jpg");
-}
-.avatar.magaryan-ekaterina-pavlovna {
-  background-image: url("../media/lawyers/magaryan-ekaterina-pavlovna.jpg");
-}
-
-*/
-
 @media screen and (max-width: 1000px) {
   main {
     padding-top: 0;
   }
-  
+
   main > .container {
     grid-template-columns: none;
   }
