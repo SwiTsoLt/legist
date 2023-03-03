@@ -280,6 +280,7 @@ nav.onscroll .logo::after {
   background-color: transparent;
   background-image: url("../media/navbar/settings.svg");
   border: none;
+  transition: background-image 0.5s ease;
 }
 
 /* Media */
@@ -354,5 +355,9 @@ nav.onscroll .logo::after {
 
     .toggleButton {
       display: block;
+    }
+
+    nav.active .toggleButton > button {
+      background-image: url("../media/navbar/cross.svg");
     }
 }
