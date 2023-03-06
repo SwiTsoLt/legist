@@ -8,7 +8,7 @@ toggleButton.addEventListener("click", () => {
 })
 
 const resizeNavbar = () => {
-    if (window.pageYOffset > 100) {
+    if (window.innerWidth > 1000 && window.pageYOffset > 100) {
         navbar.classList.add("onscroll")
     } else {
         navbar.classList.remove("onscroll")

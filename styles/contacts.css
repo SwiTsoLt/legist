@@ -18,7 +18,7 @@
   width: 100%;
   height: auto;
   max-width: var(--max-width);
-  padding: var(--padding-l);
+  padding-top: var(--padding-l);
 }
 
 header {
@@ -38,7 +38,7 @@ header > .title > h1 {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
   align-items: center;
   width: 100%;
   height: fit-content;
@@ -49,14 +49,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-self: flex-start;
-  grid-gap: var(--padding-s);
+  grid-gap: var(--padding-m);
   width: 100%;
   height: fit-content;
 }
 
-iframe {
-  width: 900px;
-  height: 700px;
+.contacts > h2 {
+  font-weight: normal;
 }
 
 .address, .phone {
@@ -94,7 +93,7 @@ iframe {
   width: 100%;
   height: fit-content;
   border-left: 2px solid var(--main-color-yellow);
-  padding: 0 var(--padding-l);
+  padding-left: var(--padding-l);
 }
 
 #map {

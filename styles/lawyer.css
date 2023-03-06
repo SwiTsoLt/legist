@@ -4,6 +4,7 @@
   width: 100%;
   height: fit-content;
   min-height: 100vh;
+  background-color: var(--main-color-gray);
 }
 
 main {
@@ -11,8 +12,6 @@ main {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: var(--main-color-gray);
-  padding:  var(--padding-l);
   padding-top: var(--navbar-height);
 }
 
@@ -20,19 +19,42 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  grid-gap: var(--padding-l);
   width: 100%;
   height: 100%;
-  max-width: var(--max-width);
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: right;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color-gray);
   padding: var(--padding-l) 0;
+  padding-right: var(--padding-l);
 }
 
 .avatar {
   width: 100%;
   height: auto;
+  max-width: calc(var(--max-width) / 2 - var(--padding-m));
   aspect-ratio: 4/3;
   background-size: cover;
   border-radius: var(--border-radius);
+}
+
+.textContainer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color-gray);
+  padding-left: var(--padding-l);
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  max-width: calc(var(--max-width) / 2 - var(--padding-m));
+  padding: var(--padding-l) 0;
 }
 
 .text > p, h4 {
@@ -88,5 +110,26 @@ main {
 
   main > .container {
     grid-template-columns: none;
+  }
+
+  .container {
+    justify-content: stretch;
+  }
+
+  .avatarContainer {
+    padding: 0;
+  }
+
+  .avatarContainer > .avatar {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    background-position: top;
+    border-radius: 0;
+  }
+
+  .textContainer {
+    padding: 0 var(--padding-m);
+    z-index: 2;
   }
 }

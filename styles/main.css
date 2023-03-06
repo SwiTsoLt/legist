@@ -298,4 +298,8 @@ header {
     width: 30px;
     height: 30px;
   }
+
+  .contacts_link {
+    padding: 0;
+  }
 }

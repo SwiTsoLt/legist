@@ -106,9 +106,7 @@ main {
   position: relative;
   flex: 1 0 21%;
   width: 100%;
-  min-width: 260px;
-  height: auto;
-  aspect-ratio: 4/3;
+  height: 260px;
   background-size: cover;
   transition: all 0.8s ease;
 }
@@ -200,7 +198,9 @@ main {
   }
 
   .lawyerList > .lawyer {
-    height: 260px;
+    height: auto;
+    min-width: 260px;
+    aspect-ratio: 4/3;
     border-radius: var(--border-radius);
   }
 
