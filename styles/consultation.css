@@ -198,3 +198,13 @@ section > .content > .text > p.list > span:nth-child(3)::before {
     padding-top: calc(var(--padding-l) * 2) !important;
   }
 }
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.6em !important;
+  }
+
+  p {
+    font-size: 0.8em !important;
+  }
+}
