@@ -110,7 +110,7 @@ section > .content > .text {
   width: 100%;
   height: fit-content;
   /* background-color: var(--black-wall); */
-  border: 4px solid var(--main-color-yellow);
+  border: 4px solid var(--main-color-gray);
   color: var(--text-color-black);
   padding: var(--padding-l);
 }
@@ -176,6 +176,10 @@ section > .content > .text > p.list > span:nth-child(3)::before {
     font-size: 1.8em !important;
   }
 
+  section:nth-child(1) {
+    padding-top: 0;
+  }
+
   section:nth-child(1), section:nth-child(3) {
     height: 100vh !important;
   }
@@ -185,7 +189,7 @@ section > .content > .text > p.list > span:nth-child(3)::before {
   }
 
   section:nth-child(4) h1 {
-    width: 340px !important;
+    width: 320px !important;
     transform: translateY(calc(-100% - var(--padding-l))) !important;
     padding: 0 !important;
   }
