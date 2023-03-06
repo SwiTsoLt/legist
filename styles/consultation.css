@@ -81,6 +81,7 @@ section:nth-child(1) > .content > .text {
 
 section:nth-child(1) > .bg {
   background-image: url("../media/consultation/this.jpg");
+  background-position: center 55%;
 }
 section:nth-child(3) > .bg {
   background-image: url("../media/consultation/experience.jpg");
