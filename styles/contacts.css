@@ -121,4 +121,13 @@ main {
     border: none;
     padding: 0;
   }
+
+  #map {
+    border-radius: 0;
+  }
+
+  .contacts {
+    text-align: center;
+    padding: 0 var(--padding-m);
+  }
 }
