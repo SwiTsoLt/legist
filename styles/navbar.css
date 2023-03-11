@@ -224,6 +224,7 @@ nav.onscroll .logo::after {
 }
 
 .link.phone > a > p {
+  font-size: 1.8em;
   font-weight: bold;
 }
 
