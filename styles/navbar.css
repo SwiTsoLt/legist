@@ -44,6 +44,10 @@ nav.onscroll .slogan {
   transform: scale(0);
 }
 
+nav.onscroll .link.phone {
+  
+}
+
 nav.onscroll .link.phone > a {
   width: 100%;
 }
@@ -271,6 +275,7 @@ nav.onscroll .logo::after {
   height: 100%;
   aspect-ratio: 1/1;
   padding: var(--padding-s);
+  padding-left: 0;
   z-index: 1;
 }
 
