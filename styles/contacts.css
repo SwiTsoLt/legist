@@ -70,6 +70,14 @@ main {
   background-image: url("../media/contacts/map-marker.svg");
 }
 
+.address > .text > a {
+  transition: color 0.2s ease; 
+}
+
+.address > .text > a:hover {
+  color: var(--main-color-green);
+}
+
 .phone > .icon {
   width: 20px;
   height: 20px;
