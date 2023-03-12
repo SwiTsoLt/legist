@@ -22,7 +22,7 @@ section {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: var(--text-color-white);
+  background-color: #fff;
   padding: 0 var(--padding-m);
 }
 
@@ -58,7 +58,7 @@ section:nth-child(2) > .content > .text > h1,
 section:nth-child(4) > .content > .text > h1 {
   position: absolute;
   transform: translateY(calc(-100% - var(--line-height) / 4 - var(--padding-l)));
-  background-color: var(--text-color-white);
+  background-color: #fff;
 }
 
 section > .bg {
@@ -111,7 +111,6 @@ section > .content > .text {
   grid-gap: var(--padding-l);
   width: 100%;
   height: fit-content;
-  /* background-color: var(--black-wall); */
   border: 4px solid var(--main-color-gray);
   color: var(--text-color-black);
   padding: var(--padding-l);
@@ -208,5 +207,24 @@ section > .content > .text > p.list > span:nth-child(3)::before {
 
   p {
     font-size: 0.8em !important;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  section:nth-child(1) {
+    height: 100vh;
+    padding-top: 0;
+  }
+
+  section:nth-child(2) {
+    height: 80vh;
+  }
+
+  section:nth-child(3) {
+    height: 90vh;
+  }
+
+  section:nth-child(4) {
+    height: 70vh;
   }
 }
