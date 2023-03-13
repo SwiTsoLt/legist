@@ -17,28 +17,8 @@ header {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   min-height: 100vh;
-}
-
-.grayBlock {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  min-height: var(--header-height);
-  background-color: var(--main-color-gray);
-  clip-path: polygon(0 0, 60% 0, 0 230%, 0 0);
-}
-
-.line {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  min-height: var(--header-height);
-  background-color: var(--main-color-yellow);
-  clip-path: polygon(57% 0, 62% 0, 0 280%, 0 245%);
 }
 
 /* Text */
@@ -78,12 +58,13 @@ header {
 .textContainer > .text > h1 {
   align-self: center;
   width: fit-content;
-  font-size: 2em;
+  font-size: var(--font-size-xl);
   text-align: center;
   padding: 0 var(--padding-m);
 }
 
 .textContainer > .text > p {
+  font-size: var(--font-size-m);
   text-align: justify;
   line-height: var(--line-height);
 }
@@ -137,19 +118,21 @@ section {
   padding: 0 var(--padding-m);
 }
 
-section:nth-child(1) {
+section:nth-child(2) {
   height: 40vh;
   border-bottom: 2px solid var(--main-color-gray);
 }
 
-section:nth-child(1) > .content > .text {
+section:nth-child(2) > .content > .text {
   border-color: var(--main-color-green);
   padding: calc(var(--padding-l) * 2) var(--padding-l);
 }
 
-section:nth-child(1) > .content > .text > h1 {
+section:nth-child(2) > .content > .text > h1 {
   position: absolute;
-  transform: translateY(calc(-100% - var(--line-height) / 4 - var(--padding-l)));
+  transform: translateY(
+    calc(-100% - var(--line-height) / 4 - var(--padding-l))
+  );
   background-color: #fff;
 }
 
@@ -170,6 +153,7 @@ section > .content > .text {
   width: 100%;
   height: fit-content;
   border: 4px solid var(--main-color-gray);
+  font-size: var(--font-size-m);
   color: var(--text-color-black);
   padding: var(--padding-l);
 }
@@ -177,7 +161,7 @@ section > .content > .text {
 section > .content > .text > h1 {
   align-self: center;
   width: fit-content;
-  font-size: 2em;
+  font-size: var(--font-size-xl);
   text-align: center;
   padding: 0 var(--padding-m);
 }
@@ -215,6 +199,10 @@ section > .content > .text > p {
 
 .text > .content p {
   line-height: var(--line-height);
+}
+
+.text > p > span.bold {
+  font-weight: bold;
 }
 
 /* Contacts link */
@@ -277,7 +265,7 @@ section > .content > .text > p {
 
 .bg > img {
   width: 100%;
-  height: 100vh;
+  height: auto;
   object-fit: cover;
   filter: brightness(0.6);
   z-index: -1;
@@ -290,8 +278,88 @@ main {
   height: fit-content;
 }
 
-main > section:nth-child(2) {
+main > section:nth-child(3) {
   background-color: var(--main-color-gray);
+}
+
+main > section.signup {
+  width: 100%;
+  height: 80px;
+  padding: 0;
+}
+
+main > section.signup > a {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color-green);
+  overflow: hidden;
+}
+
+main > section.signup > a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 102%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+main > section.signup > a:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  background-color: var(--main-color-yellow);
+}
+
+main > section.signup > a:hover > .linkInner > .iconContainer > .icon {
+  background-image: url("../media/navbar/phone-black.svg");
+}
+
+main > section.signup > a:hover > .linkInner > p {
+  color: var(--text-color-black);
+}
+
+main > section.signup > a > .linkInner {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  max-width: var(--max-width);
+  padding: 0 var(--padding-m);
+}
+
+main > section.signup > a > .linkInner > .iconContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  aspect-ratio: 1/1;
+  padding: var(--padding-m) 0;
+  z-index: 2;
+}
+
+main > section.signup > a > .linkInner > .iconContainer > .icon {
+  width: 100%;
+  height: 100%;
+  background-image: url("../media/navbar/phone-white.svg");
+  transition: background-image 0.5s ease-in-out;
+}
+
+main > section.signup > a > .linkInner > p {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  font-size: var(--font-size-l);
+  transition: color 0.5s ease-in-out;
+  z-index: 2;
 }
 
 /* Diplomas */
@@ -412,9 +480,6 @@ main > section:nth-child(2) {
   font-weight: bold;
   transition: color 0.5s ease-in-out, transform 0.1s ease-in-out;
   z-index: 1;
-}
-
-.diplomasContainer > button:hover {
 }
 
 .diplomasContainer > button:hover::after {
@@ -578,37 +643,29 @@ main > section:nth-child(2) {
 
 /* Media */
 
-@media screen and (max-width: 1400px) {
-  .textContainer {
-    width: 40%;
-  }
-}
-
 @media screen and (max-width: 1100px) {
   .wrapper {
     display: grid;
     grid-template-rows: 1fr auto;
   }
 
-  .textContainer > .text {
-    line-height: 1em;
-  }
-
-  .textContainer > .text > h1  {
-    font-size: 1.6em;
-  }
-
   header {
-    height: fit-content;
     max-height: none;
     min-height: auto;
   }
 
-  main > section:nth-child(1) {
-    height: 60vh;
+  p,
+  span,
+  h1,
+  h2 {
+    line-height: normal !important;
   }
 
-  main > section:nth-child(1) > .content > .text > h1 {
+  main > section:nth-child(3) {
+    height: 80vh;
+  }
+
+  main > section:nth-child(3) > .content > .text > h1 {
     width: 80%;
     font-size: 1.6em;
   }
@@ -642,10 +699,6 @@ main > section:nth-child(2) {
     filter: brightness(0.5);
   }
 
-  .grayBlock {
-    display: none;
-  }
-
   .line {
     display: none;
   }
@@ -655,7 +708,25 @@ main > section:nth-child(2) {
   }
 }
 
+@media screen and (max-width: 600px) {
+  section.signup {
+    height: 100px !important;
+  }
+
+  section.signup > a > .linkInner > p {
+    font-size: var(--font-size-m) !important;
+  }
+
+  section.signup > a > .linkInner > .iconContainer {
+    padding: var(--padding-l) 0 !important;
+  }
+}
+
 @media screen and (max-width: 450px) {
+  header {
+    height: 150vh;
+  }
+
   .contactsLink > a {
     padding: var(--padding-m);
   }
@@ -663,10 +734,18 @@ main > section:nth-child(2) {
 
 @media screen and (max-height: 700px) {
   header {
-    height: 120vh;
+    max-height: none;
+    min-height: auto;
   }
 
-  .bg > img {
-    height: 120vh;
+  p,
+  span,
+  h1,
+  h2 {
+    line-height: normal !important;
+  }
+
+  main > section:nth-child(2) {
+    height: 80vh;
   }
 }

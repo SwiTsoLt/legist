@@ -27,9 +27,14 @@ nav {
 /* onscroll */
 
 nav.onscroll {
-  height: calc(var(--navbar-height) / 2);
+  height: calc(var(--navbar-height) / 2 - var(--padding-s));
   background-color: var(--main-color-gray);
   border-color: var(--main-color-yellow);
+  padding: 0;
+}
+
+nav.onscroll .right {
+  grid-gap: 0;
 }
 
 nav.onscroll > .nav_container {
@@ -219,8 +224,15 @@ nav.onscroll .logo::after {
 }
 
 .link.phone > a {
+  display: flex;
+  grid-gap: var(--padding-s);
+  font-size: var(--font-size-s);
   width: 100%;
   background-color: var(--main-color-green);
+}
+
+.link.phone > a > span {
+  font-size: var(--font-size-m);
 }
 
 .link.phone > a > p {
@@ -237,6 +249,7 @@ nav.onscroll .logo::after {
   height: 100%;
   background-color: var(--white-wall);
   overflow: hidden;
+  font-size: var(--font-size-m);
 }
 
 .link > a::after {
@@ -275,8 +288,7 @@ nav.onscroll .logo::after {
   width: auto;
   height: 100%;
   aspect-ratio: 1/1;
-  padding: var(--padding-s);
-  padding-left: 0;
+  padding: calc(var(--padding-s) / 2) 0;
   z-index: 1;
 }
 

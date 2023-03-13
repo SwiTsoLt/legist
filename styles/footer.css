@@ -8,6 +8,16 @@ footer {
   z-index: 100;
 }
 
+footer a{
+  font-size: var(--font-size-m);
+  line-height: var(--line-height);
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--main-color-green);
+}
+
 footer > .content {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -22,6 +32,10 @@ footer > .content {
   height: fit-content;
   border-bottom: 2px solid var(--main-color-yellow);
   padding: var(--padding-l) 0;
+}
+
+.breadcrumbs > p {
+  line-height: var(--line-height);
 }
 
 .breadcrumbs a {
