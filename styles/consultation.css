@@ -1,7 +1,3 @@
-nav {
-  background-color: var(--black-wall);
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -16,7 +12,8 @@ main {
   height: fit-content;
 }
 
-p, span {
+p,
+span {
   font-size: var(--font-size-m);
 }
 
@@ -25,26 +22,13 @@ section {
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: #fff;
-  padding: 0 var(--padding-m);
+  padding: calc(var(--padding-l) * 2) var(--padding-m);
 }
 
 section:nth-child(1) {
-  height: 70vh;
-  padding-top: var(--navbar-height);
-}
-
-section:nth-child(2) {
-  height: 40vh;
-}
-
-section:nth-child(4) {
-  height: 60vh;
-}
-
-section:nth-child(5) {
-  height: 40vh;
+  padding-top: calc(var(--navbar-height) + var(--padding-l));
 }
 
 section:nth-child(4) > .content > .text {
@@ -61,7 +45,9 @@ section:nth-child(5) > .content > .text {
 section:nth-child(2) > .content > .text > h1,
 section:nth-child(5) > .content > .text > h1 {
   position: absolute;
-  transform: translateY(calc(-100% - var(--line-height) / 4 - var(--padding-l)));
+  transform: translateY(
+    calc(-100% - var(--line-height) / 4 - var(--padding-l))
+  );
   background-color: #fff;
 }
 
@@ -252,63 +238,18 @@ main > section.signup > a > .linkInner > p {
   z-index: 2;
 }
 
-@media screen and (max-width: 1000px) {
-  nav {
-    background-color: var(--main-color-gray);
-  }
-
-  h1 {
-    font-size: var(--font-size-l) !important;
-  }
-
-  section:nth-child(1) {
-    padding-top: 0;
-  }
-
-  section:nth-child(1), section:nth-child(3) {
-    height: 100vh !important;
-  }
-
-  section:nth-child(2), section:nth-child(4) {
-    height: 70vh !important;
-  }
-
-  section:nth-child(5) h1 {
-    width: 320px !important;
-    transform: translateY(calc(-100% - var(--padding-l))) !important;
-    padding: 0 !important;
-  }
-
-  section:nth-child(5) .text {
-    padding-top: calc(var(--padding-l) * 2) !important;
+@media screen and (max-width: 700px) {
+  section.signup p {
+    font-size: var(--font-size-m) !important;
   }
 }
 
-@media screen and (max-width: 350px) {
-  h1 {
+@media screen and (max-width: 400px) {
+  h1, h2 {
     font-size: var(--font-size-l) !important;
   }
 
-  p {
-    font-size: var(--font-size-s) !important;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  section:nth-child(1) {
-    height: 100vh;
-    padding-top: 0;
-  }
-
-  section:nth-child(2) {
-    height: 80vh;
-  }
-
-  section:nth-child(4) {
-    height: 90vh;
-  }
-
-  section:nth-child(5) {
-    height: 70vh;
+  p, span {
+    line-height: normal !important;
   }
 }
