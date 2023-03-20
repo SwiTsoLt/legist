@@ -214,28 +214,19 @@ section.gallery > .galleryContainer > .galleryInner > .imagesList {
   padding: 0 0 8px 0;
 }
 
-section.gallery > .galleryContainer > .galleryInner > .imagesList > .image {
+section.gallery > .galleryContainer > .galleryInner > .imagesList > a {
   width: auto;
   height: 100%;
-  aspect-ratio: 16/9;
   border-radius: var(--border-radius);
-  background-size: cover;
 }
 
-section.gallery > .galleryContainer > .galleryInner > .imagesList > .image:nth-child(1) {
-  background-image: url("../media/consultation/gallery/photo_2023-03-20_14-49-18.jpg");
-}
-section.gallery > .galleryContainer > .galleryInner > .imagesList > .image:nth-child(2) {
-  background-image: url("../media/consultation/gallery/photo_2023-03-20_14-49-41.jpg");
-}
-
-section.gallery > .galleryContainer > .galleryInner > .imagesList > .image:nth-child(3) {
-  background-image: url("../media/consultation/gallery/photo_2023-03-20_14-49-46.jpg");
+section.gallery > .galleryContainer > .galleryInner > .imagesList > a > img {
+  width: auto;
+  height: 100%;
+  border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
-section.gallery > .galleryContainer > .galleryInner > .imagesList > .image:nth-child(4) {
-  background-image: url("../media/consultation/gallery/photo_2023-03-20_14-49-51.jpg");
-}
 
 section.gallery > .galleryContainer > .galleryInner::-webkit-scrollbar {
   width: 6px;

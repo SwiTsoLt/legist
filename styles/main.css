@@ -19,6 +19,7 @@ header {
   width: 100%;
   height: fit-content;
   min-height: 100vh;
+  padding: var(--padding-m);
 }
 
 header > .bg {
@@ -49,7 +50,6 @@ header > .bg {
   width: 100%;
   height: fit-content;
   max-width: var(--max-width);
-  padding: var(--padding-m);
   z-index: 1;
 }
 
@@ -372,51 +372,17 @@ section.diplomas > .diplomasContainer > .diplomasInner > .imagesList {
   padding: 0 0 8px 0;
 }
 
-section.diplomas > .diplomasContainer > .diplomasInner > .imagesList > .image {
+section.diplomas > .diplomasContainer > .diplomasInner > .imagesList > a {
   width: auto;
   height: 400px;
-  aspect-ratio: 16/9;
   border-radius: var(--border-radius);
-  background-size: cover;
 }
 
-section.diplomas
-  > .diplomasContainer
-  > .diplomasInner
-  > .imagesList
-  > .image:nth-child(1) {
-  background-image: url("../media/main/diplomas/photo_2023-03-20_14-50-00.jpg");
-}
-section.diplomas
-  > .diplomasContainer
-  > .diplomasInner
-  > .imagesList
-  > .image:nth-child(2) {
-  background-image: url("../media/main/diplomas/photo_2023-03-20_14-50-29.jpg");
-}
-
-section.diplomas
-  > .diplomasContainer
-  > .diplomasInner
-  > .imagesList
-  > .image:nth-child(3) {
-  background-image: url("../media/main/diplomas/photo_2023-03-20_14-50-32.jpg");
-}
-
-section.diplomas
-  > .diplomasContainer
-  > .diplomasInner
-  > .imagesList
-  > .image:nth-child(4) {
-  background-image: url("../media/main/diplomas/photo_2023-03-20_14-50-36.jpg");
-}
-
-section.diplomas
-  > .diplomasContainer
-  > .diplomasInner
-  > .imagesList
-  > .image:nth-child(5) {
-  background-image: url("../media/main/diplomas/photo_2023-03-20_14-50-39.jpg");
+section.diplomas > .diplomasContainer > .diplomasInner > .imagesList > a > img {
+  width: auto;
+  height: 100%;
+  border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 /* Reviews */
@@ -598,13 +564,21 @@ section.diplomas
 }
 
 @media screen and (max-width: 500px) {
-  p,
-  span {
-    line-height: normal !important;
-  }
-
   section.signup {
     font-size: var(--font-size-s) !important;
+  }
+
+  p {
+    font-size: var(--font-size-s) !important;
+    line-height: var(--line-height) !important;
+  }
+
+  spam {
+    line-height: var(--line-height) !important;
+  }
+
+  section.signup p {
+    font-size: var(--font-size-m) !important; 
   }
 }
 
@@ -635,12 +609,6 @@ section.diplomas
 
   section.diplomasContainer > .diplomas > li > .diplomaInner {
     box-shadow: none;
-  }
-
-  p,
-  span {
-    font-size: var(--font-size-s) !important;
-    line-height: var(--line-height) !important;
   }
 }
 
