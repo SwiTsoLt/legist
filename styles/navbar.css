@@ -382,7 +382,7 @@ nav.onscroll .logo::after {
     }
 
     .phoneIconContainer {
-      padding: var(--padding-m) 0 var(--padding-m) var(--padding-m);
+      padding: var(--padding-s) 0 var(--padding-s) var(--padding-m);
     }
 
     .link.phone > a {
