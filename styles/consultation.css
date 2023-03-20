@@ -229,7 +229,6 @@ section.gallery > .galleryContainer > .galleryInner > .imagesList > a > img {
   cursor: pointer;
 }
 
-
 section.gallery > .galleryContainer > .galleryInner::-webkit-scrollbar {
   width: 6px;
 }
