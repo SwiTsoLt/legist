@@ -12,8 +12,8 @@ main {
   height: fit-content;
 }
 
-p,
-span {
+main p,
+main span {
   font-size: var(--font-size-m);
 }
 

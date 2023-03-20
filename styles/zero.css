@@ -50,21 +50,3 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-thumb-color-hover);
 }
-
-@media screen and (max-width: 1400px) {
-  h1 {
-    font-size: 1.6em;
-  }
-
-  p {
-    font-size: 0.9em;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  body > .wrapper {
-    min-height: 100vh !important;
-    max-height: none;
-    min-height: auto;
-  }
-}
