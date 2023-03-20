@@ -447,7 +447,6 @@ section.diplomas > .diplomasContainer > .diplomasInner > .imagesList > a > img {
   height: calc(
     var(--line-height) * 4 + 50px + var(--padding-s) + var(--padding-m) * 2
   );
-  /* background-color: var(--main-color-gray); */
   border: 1px solid #dadada;
   border-radius: var(--border-radius);
   padding: var(--padding-s);
