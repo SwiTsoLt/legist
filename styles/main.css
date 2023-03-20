@@ -117,25 +117,6 @@ section {
   padding: 0 var(--padding-m);
 }
 
-section:nth-child(2) {
-  height: fit-content;
-  border-bottom: 2px solid var(--main-color-gray);
-  padding: 60px var(--padding-m) var(--padding-m) var(--padding-m);
-}
-
-section:nth-child(2) > .content > .text {
-  border-color: var(--main-color-green);
-  padding: calc(var(--padding-l) * 2) var(--padding-l);
-}
-
-section:nth-child(2) > .content > .text > h1 {
-  position: absolute;
-  transform: translateY(
-    calc(-100% - var(--line-height) / 4 - var(--padding-l))
-  );
-  background-color: #fff;
-}
-
 section > .content {
   display: flex;
   justify-content: center;
@@ -171,38 +152,25 @@ section > .content > .text > p {
   line-height: var(--line-height);
 }
 
-.title {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+/* Team */
+
+section.team {
+  height: fit-content;
+  padding: var(--padding-l) var(--padding-m);
+  padding-top: calc(var(--padding-l) + var(--line-height));
 }
 
-.title > h1 {
+section.team > .content > .text {
+  border-color: var(--main-color-green);
+  padding-top: calc(var(--padding-l) * 2);
+}
+
+section.team > .content > .text > h1 {
+  position: absolute;
+  max-width: 80%;
+  transform: translateY(calc(-100% - var(--padding-l)));
+  background-color: #fff;
   line-height: var(--line-height);
-  text-align: center;
-}
-
-.text > .content {
-  display: flex;
-  flex-direction: column;
-  grid-gap: var(--padding-s);
-  list-style: none;
-}
-
-.text > .content > li {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  grid-gap: var(--padding-m);
-  width: fit-content;
-}
-
-.text > .content p {
-  line-height: var(--line-height);
-}
-
-.text > p > span.bold {
-  font-weight: bold;
 }
 
 /* Contacts link */
@@ -673,11 +641,17 @@ main > section.signup > a > .linkInner > p {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   h1, h2 {
     font-size: var(--font-size-l) !important;
-    line-height: normal !important;
   }
+
+  section.team > .content > .text > h1 {
+    transform: translateY(calc(-100%  - var(--line-height) / 4 - var(--padding-l)));
+  }
+}
+
+@media screen and (max-width: 500px) {
 
   p, span {
     line-height: normal !important;

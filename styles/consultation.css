@@ -17,6 +17,8 @@ span {
   font-size: var(--font-size-m);
 }
 
+/* Section */
+
 section {
   display: flex;
   justify-content: center;
@@ -28,27 +30,12 @@ section {
 }
 
 section:nth-child(1) {
+  min-height: 60vh;
   padding-top: calc(var(--navbar-height) + var(--padding-l));
 }
 
-section:nth-child(4) > .content > .text {
-  background-color: var(--black-wall);
-  color: var(--text-color-white);
-}
-
-section:nth-child(2) > .content > .text,
-section:nth-child(5) > .content > .text {
-  border-color: var(--main-color-green);
-  padding: calc(var(--padding-l) * 2) var(--padding-l);
-}
-
-section:nth-child(2) > .content > .text > h1,
-section:nth-child(5) > .content > .text > h1 {
-  position: absolute;
-  transform: translateY(
-    calc(-100% - var(--line-height) / 4 - var(--padding-l))
-  );
-  background-color: #fff;
+section:nth-child(2) {
+  min-height: 40vh;
 }
 
 section > .bg {
@@ -58,32 +45,16 @@ section > .bg {
   width: 100%;
   height: 100%;
   filter: brightness(0.7);
-}
-
-section:nth-child(n) > .bg {
   background-size: cover;
 }
 
-section:nth-child(1) > .content > .text {
-  background-color: var(--black-wall);
-  color: var(--text-color-white);
-}
-
-section:nth-child(1) > .bg {
-  background-image: url("../media/consultation/this.jpg");
-  background-position: center 55%;
-}
-section:nth-child(4) > .bg {
+section.experience > .bg {
   background-image: url("../media/consultation/experience.jpg");
-  background-position: center 30%;
+  background-position: top;
 }
-/* section:nth-child(2) > .bg {
-  background-image: url("../media/consultation/team.jpg");
-}
-section:nth-child(4) > .bg {
+section.work > .bg {
   background-image: url("../media/consultation/work.jpg");
 }
-*/
 
 section > .content {
   display: flex;
@@ -101,8 +72,9 @@ section > .content > .text {
   grid-gap: var(--padding-l);
   width: 100%;
   height: fit-content;
+  background-color: var(--black-wall);
   border: 4px solid var(--main-color-gray);
-  color: var(--text-color-black);
+  color: var(--text-color-white);
   padding: var(--padding-l);
 }
 
@@ -126,37 +98,7 @@ section > .content > .text > p.list {
   width: fit-content;
 }
 
-section > .content > .text > p.list > span {
-  position: relative;
-  width: 100%;
-  line-height: var(--line-height);
-  padding-left: calc(var(--padding-l) + var(--padding-s));
-}
-
-section > .content > .text > p.list > span::before {
-  content: "";
-  position: absolute;
-  left: calc(var(--padding-l) + var(--padding-s));
-  top: 50%;
-  transform: translate(calc(-100% - var(--padding-s)), -50%);
-  width: auto;
-  height: var(--line-height);
-  aspect-ratio: 1/1;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-section > .content > .text > p.list > span:nth-child(1)::before {
-  background-image: url("../media/consultation/certificate.svg");
-}
-section > .content > .text > p.list > span:nth-child(2)::before {
-  background-image: url("../media/consultation/check-list.svg");
-}
-section > .content > .text > p.list > span:nth-child(3)::before {
-  background-image: url("../media/consultation/time.svg");
-}
+/* Signup */
 
 main > section.signup {
   width: 100%;
@@ -238,6 +180,89 @@ main > section.signup > a > .linkInner > p {
   z-index: 2;
 }
 
+/* Gallery */
+
+section.gallery {
+  height: 40vh;
+  padding: var(--padding-l) var(--padding-m);
+}
+
+section.gallery > .galleryContainer {
+  width: 100%;
+  max-width: var(--max-width);
+  height: 100%;
+  border-radius: var(--border-radius);
+  padding: 8px 0;
+}
+
+section.gallery > .galleryContainer > .galleryInner {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border-radius: var(--border-radius);
+}
+
+section.gallery > .galleryContainer > .galleryInner > .imagesList {
+  display: flex;
+  flex: none;
+  scroll-snap-type: x mandatory;
+  grid-gap: 8px;
+  width: fit-content;
+  min-width: 100%;
+  height: 100%; 
+  border-radius: var(--border-radius);
+  padding: 0 0 8px 0;
+}
+
+section.gallery > .galleryContainer > .galleryInner > .imagesList > .image {
+  width: auto;
+  height: 100%;
+  aspect-ratio: 16/9;
+  border-radius: var(--border-radius);
+  background-image: url("../media/consultation/consultation.jpg");
+  background-size: cover;
+}
+
+section.gallery > .galleryContainer > .galleryInner::-webkit-scrollbar {
+  width: 6px;
+}
+
+section.gallery > .galleryContainer > .galleryInner::-webkit-scrollbar {
+  height: 6px;
+}
+
+section.gallery > .galleryContainer > .galleryInner::-webkit-scrollbar-track {
+  background-color: #dadada;
+  border-radius: var(--border-radius);
+}
+
+section.gallery > .galleryContainer > .galleryInner::-webkit-scrollbar-thumb,
+.reviewsInner::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: var(--border-radius);
+}
+
+/* Team */
+
+section.team {
+  align-items: center;
+}
+
+section.team > .content > .text {
+  border-color: var(--main-color-green);
+  background-color: transparent;
+  color: var(--text-color-black);
+  padding-top: calc(var(--padding-l) * 2);
+}
+
+section.team > .content > .text > h1 {
+  position: absolute;
+  transform: translateY(
+    calc(-100% - var(--line-height) / 4 - var(--padding-l))
+  );
+  background-color: #fff;
+}
+
 @media screen and (max-width: 700px) {
   section.signup p {
     font-size: var(--font-size-m) !important;
@@ -245,11 +270,13 @@ main > section.signup > a > .linkInner > p {
 }
 
 @media screen and (max-width: 400px) {
-  h1, h2 {
+  h1,
+  h2 {
     font-size: var(--font-size-l) !important;
   }
 
-  p, span {
+  p,
+  span {
     line-height: normal !important;
   }
 }
