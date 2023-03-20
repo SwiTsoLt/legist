@@ -298,6 +298,7 @@ nav.onscroll .logo::after {
 }
 
 .link.phone > a:hover > .phoneIconContainer > .phoneIcon {
+  transform: rotate(20deg) translate(8px, -6px);
   background-image: url("../media/navbar/phone-black.svg");
 }
 

@@ -274,10 +274,6 @@ main > section.signup > a:hover::before {
   background-color: var(--main-color-yellow);
 }
 
-main > section.signup > a:hover > .linkInner > .iconContainer > .icon {
-  background-image: url("../media/navbar/phone-black.svg");
-}
-
 main > section.signup > a:hover > .linkInner > p {
   color: var(--text-color-black);
 }
@@ -307,7 +303,12 @@ main > section.signup > a > .linkInner > .iconContainer > .icon {
   max-height: 40px;
   aspect-ratio: 1/1;
   background-image: url("../media/navbar/phone-white.svg");
-  transition: background-image 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main > section.signup > a:hover > .linkInner > .iconContainer > .icon {
+  transform: rotate(20deg) translate(8px, -6px);
+  background-image: url("../media/navbar/phone-black.svg");
 }
 
 main > section.signup > a > .linkInner > p {
