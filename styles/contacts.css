@@ -18,7 +18,7 @@
   width: 100%;
   height: auto;
   max-width: var(--max-width);
-  padding-top: var(--padding-l);
+  padding: var(--padding-l) var(--padding-m) 0 var(--padding-m);
 }
 
 header {
@@ -39,6 +39,7 @@ header > .title > h1 {
 main {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  justify-items: center;
   align-items: center;
   width: 100%;
   height: fit-content;
@@ -100,6 +101,7 @@ main {
   align-items: center;
   width: 100%;
   height: fit-content;
+  max-width: calc(var(--max-width) / 2);
   border-left: 2px solid var(--main-color-yellow);
   padding-left: var(--padding-l);
 }
@@ -111,11 +113,11 @@ main {
   border-radius: var(--border-radius);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .wrapper {
     padding-top: 0;
   }
-  
+
   .container {
     height: fit-content;
   }
@@ -125,17 +127,23 @@ main {
     grid-gap: var(--padding-l);
   }
 
+  .contacts {
+    text-align: center;
+    padding: 0 var(--padding-m);
+  }
+
   .map {
     border: none;
     padding: 0;
   }
+}
 
+@media screen and (max-width: 600px) {
   #map {
     border-radius: 0;
   }
 
-  .contacts {
-    text-align: center;
-    padding: 0 var(--padding-m);
+  .container {
+    padding: var(--padding-l) 0 0 0;
   }
 }

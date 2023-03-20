@@ -18,7 +18,7 @@ main {
   min-height: var(--header-height);
 }
 
-p {
+main p {
   font-size: var(--font-size-m);
 }
 

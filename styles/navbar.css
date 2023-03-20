@@ -6,7 +6,6 @@ nav {
   top: 0;
   width: 100%;
   height: var(--navbar-height);
-  border-bottom: 2px solid transparent;
   padding: var(--padding-s);
   overflow: hidden;
   z-index: 999;
@@ -29,7 +28,6 @@ nav {
 nav.onscroll {
   height: calc(var(--navbar-height) / 2 - var(--padding-s));
   background-color: var(--main-color-gray);
-  border-color: var(--main-color-yellow);
   padding: 0;
 }
 

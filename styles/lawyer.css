@@ -15,7 +15,7 @@ main {
   padding-top: var(--navbar-height);
 }
 
-main a, p, span{
+main a, main p, main span{
   font-size: var(--font-size-m);
   line-height: var(--line-height);
   transition: color 0.2s ease;
@@ -25,11 +25,11 @@ main a:hover {
   color: var(--main-color-green);
 }
 
-h1 {
+main h1 {
   font-size: var(--font-size-xl);
 }
 
-p {
+main p {
   font-size: var(--font-size-m);
 }
 
