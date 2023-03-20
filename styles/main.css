@@ -559,7 +559,7 @@ section.diplomas
     font-size: var(--font-size-m) !important;
   }
 
-  section.diplomas > .diplomasContainer > .diplomasInner > .imagesList > .image {
+  section.diplomas > .diplomasContainer > .diplomasInner > .imagesList > a {
     height: 260px;
   }
 }
@@ -586,30 +586,6 @@ section.diplomas
 @media screen and (max-width: 380px) {
   section.signup {
     height: 80px !important;
-  }
-
-  section.diplomasContainer {
-    height: auto;
-    aspect-ratio: 4/3;
-  }
-
-  section.diplomasContainer > button {
-    width: 36px;
-    height: 36px;
-  }
-
-  section.diplomasContainer > .diplomas {
-    grid-gap: var(--padding-m);
-    background-color: transparent;
-  }
-
-  section.diplomasContainer > .diplomas > li {
-    scroll-snap-align: center;
-    padding: 0;
-  }
-
-  section.diplomasContainer > .diplomas > li > .diplomaInner {
-    box-shadow: none;
   }
 }
 
