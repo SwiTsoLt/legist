@@ -148,40 +148,43 @@ main p {
 }
 
 .lawyerList > .lawyer:nth-child(1) {
-  background-image: url("https://legist.by/images/advokaty/Kos860645.jpg");
+  background-image: url("../media/lawyers/kosik-vladimir-vasilyevich.jpg");
 }
 .lawyerList > .lawyer:nth-child(2) {
-  background-image: url("https://legist.by/images/advokaty/degt-1.jpg");
+  background-image: url("../media/lawyers/degtyarev-sergey-ivanovich.jpg");
 }
 .lawyerList > .lawyer:nth-child(3) {
-  background-image: url("https://legist.by/images/advokaty/martst-1.jpg");
+  background-image: url("../media/main/avatar.png");
+  background-size: contain;
 }
 .lawyerList > .lawyer:nth-child(4) {
-  background-image: url("https://legist.by/images/advokaty/860645.jpg");
+  background-image: url("../media/main/avatar.png");
+  background-size: contain;
 }
 .lawyerList > .lawyer:nth-child(5) {
-  background-image: url("https://legist.by/images/advokaty/zul-1.jpg");
+  background-image: url("../media/lawyers/zylkova-tatiana-viktorovna.jpg");
 }
 .lawyerList > .lawyer:nth-child(6) {
-  background-image: url("https://legist.by/images/advokaty/kom-1.jpg");
+  background-image: url("../media/lawyers/komel-vadim-gennadyevich.jpg");
 }
 .lawyerList > .lawyer:nth-child(7) {
-  background-image: url("https://legist.by/images/advokaty/nik-1.jpg");
+  background-image: url("../media/main/avatar.png");
+  background-size: contain;
 }
 .lawyerList > .lawyer:nth-child(8) {
-  background-image: url("https://legist.by/images/advokaty/2018.-860--645.jpg");
+  background-image: url("../media/lawyers/hermenchuk-olga-nikolayevna.jpg");
 }
 .lawyerList > .lawyer:nth-child(9) {
-  background-image: url("https://legist.by/images/advokaty/pil-1.jpg");
+  background-image: url("../media/lawyers/pilinkevich-nikolay-nikolayevich.jpg");
 }
 .lawyerList > .lawyer:nth-child(10) {
-  background-image: url("https://legist.by/images/advokaty/avch-1.jpg");
+  background-image: url("../media/lawyers/avchinko-dmitry-leonidovich.jpg");
 }
 .lawyerList > .lawyer:nth-child(11) {
-  background-image: url("https://legist.by/images/advokaty/zhing-1.jpg");
+  background-image: url("../media/lawyers/rapinchuk-anastasia-viktorovna.jpg");
 }
 .lawyerList > .lawyer:nth-child(12) {
-  background-image: url("https://legist.by/images/advokaty/mag-1.jpg");
+  background-image: url("../media/lawyers/magaryan-ekaterina-pavlovna.jpg");
 }
 
 @media screen and (max-width: 1000px) {

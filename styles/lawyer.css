@@ -90,12 +90,6 @@ main p {
 .avatar.degtyarev-sergey-ivanovich {
   background-image: url("../media/lawyers/degtyarev-sergey-ivanovich.jpg");
 }
-.avatar.martsinkevich-tatiana-alexandrovna {
-  background-image: url("../media/lawyers/martsinkevich-tatiana-alexandrovna.jpg");
-}
-.avatar.vovchinsky-maxim-gennadyevich {
-  background-image: url("../media/lawyers/vovchinsky-maxim-gennadyevich.jpg");
-}
 .avatar.zylkova-tatiana-viktorovna {
   background-image: url("../media/lawyers/zylkova-tatiana-viktorovna.jpg");
 }
@@ -108,9 +102,6 @@ main p {
 .avatar.hermenchuk-olga-nikolayevna {
   background-image: url("../media/lawyers/hermenchuk-olga-nikolayevna.jpg");
   background-position: top;
-}
-.avatar.pilinkevich-nikolay-nikolayevich {
-  background-image: url("../media/lawyers/pilinkevich-nikolay-nikolayevich.jpg");
 }
 .avatar.avchinko-dmitry-leonidovich {
   background-image: url("../media/lawyers/avchinko-dmitry-leonidovich.jpg");
