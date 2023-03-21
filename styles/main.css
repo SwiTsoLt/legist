@@ -383,7 +383,7 @@ section.diplomas > .diplomasContainer > .diplomasInner > .imagesList > a > img {
   width: auto;
   height: 100%;
   border-radius: var(--border-radius);
-  cursor: pointer;
+  cursor: zoom-in;
 }
 
 /* Reviews */
@@ -568,12 +568,12 @@ section.diplomas
     font-size: var(--font-size-s) !important;
   }
 
-  p {
+  main p {
     font-size: var(--font-size-s) !important;
     line-height: var(--line-height) !important;
   }
 
-  spam {
+  main spam {
     line-height: var(--line-height) !important;
   }
 

@@ -223,7 +223,7 @@ nav.onscroll .logo::after {
 
 .link.phone > a {
   display: flex;
-  grid-gap: var(--padding-s);
+  justify-content: center;
   font-size: var(--font-size-s);
   width: 100%;
   background-color: var(--main-color-green);
@@ -234,7 +234,7 @@ nav.onscroll .logo::after {
 }
 
 .link.phone > a > p {
-  font-size: 1.7em;
+  font-size: var(--font-size-l);
   font-weight: bold;
 }
 
@@ -283,16 +283,20 @@ nav.onscroll .logo::after {
 }
 
 .phoneIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: auto;
   height: 100%;
   aspect-ratio: 1/1;
-  padding: calc(var(--padding-s) / 2) 0;
+  padding: var(--padding-s) 0;
   z-index: 1;
 }
 
 .phoneIcon {
-  width: 100%;
+  width: auto;
   height: 100%;
+  aspect-ratio: 1/1;
   background-image: url("../media/navbar/phone-white.svg");
   transition: all 0.5s ease;
 }
@@ -381,10 +385,6 @@ nav.onscroll .logo::after {
       max-height: none;
     }
 
-    .phoneIconContainer {
-      padding: var(--padding-s) 0 var(--padding-s) var(--padding-m);
-    }
-
     .link.phone > a {
       width: 100%;
     }
@@ -404,6 +404,15 @@ nav.onscroll .logo::after {
     nav.active .toggleButton > button {
       background-image: url("../media/navbar/cross.svg");
     }
+
+    .link.phone > a > p {
+      font-size: var(--font-size-m);
+    }
+  
+    .phoneIconContainer {
+      padding: calc(var(--padding-l) / 2) 0;
+    }
+  
 }
 
 @media screen and (max-height: 700px) {
@@ -462,12 +471,16 @@ nav.onscroll .logo::after {
     max-height: none;
   }
 
-  .phoneIconContainer {
-    padding: var(--padding-m) 0 var(--padding-m) var(--padding-m);
-  }
-
   .link.phone > a {
     width: 100%;
+  }
+
+  .link.phone > a > p {
+    font-size: var(--font-size-m);
+  }
+
+  .phoneIconContainer {
+    padding: calc(var(--padding-l) / 2) 0;
   }
 
   .slogan > p {

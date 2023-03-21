@@ -226,7 +226,7 @@ section.gallery > .galleryContainer > .galleryInner > .imagesList > a > img {
   width: auto;
   height: 100%;
   border-radius: var(--border-radius);
-  cursor: pointer;
+  cursor: zoom-in;
 }
 
 section.gallery > .galleryContainer > .galleryInner::-webkit-scrollbar {
@@ -282,13 +282,13 @@ section.team > .content > .text > h1 {
 }
 
 @media screen and (max-width: 400px) {
-  h1,
-  h2 {
+  main h1,
+  main h2 {
     font-size: var(--font-size-l) !important;
   }
 
-  p,
-  span {
+  main p,
+  main span {
     line-height: normal !important;
   }
 }
