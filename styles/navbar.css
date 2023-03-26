@@ -317,9 +317,11 @@ nav.onscroll .logo::after {
   width: 50px;
   height: 50px;
   background-color: var(--main-color-gray);
-  border-right: 2px solid var(--main-color-yellow);
-  border-bottom: 2px solid var(--main-color-yellow);
+  border-right: 2px solid var(--text-color-white);
+  border-bottom: 2px solid var(--text-color-white);
   border-radius: 0 0 var(--border-radius) 0;
+  padding: calc(var(--padding-s) / 2);
+  transition: border-color 0.5s ease;
 }
 
 .toggleButton > button {
@@ -345,12 +347,13 @@ nav.onscroll .logo::after {
       height: 100%;
       max-width: calc(100vw - 50px);
       background-color: var(--main-color-gray);
-      border-right: 2px solid var(--main-color-yellow);
+      border-right: 2px solid var(--text-color-white);
       overflow: visible;
-      transition: transform 0.5s ease;
+      transition: all 0.5s ease;
     }
 
     nav.active {
+      border-color: var(--main-color-yellow);
       transform: translateX(0);
     }
 
@@ -408,6 +411,10 @@ nav.onscroll .logo::after {
 
     .toggleButton {
       display: block;
+    }
+
+    nav.active .toggleButton {
+      border-color: var(--main-color-yellow);
     }
 
     nav.active .toggleButton > button {
