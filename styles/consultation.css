@@ -275,6 +275,10 @@ section.team > .content > .text > h1 {
     min-height: auto !important;
   }
 
+  section:nth-child(1) > .content > .text {
+    padding-top: calc(var(--padding-l) * 2) !important;
+  }
+
   section > .content > .text {
     border: none;
     padding: var(--padding-m) !important;
@@ -301,5 +305,11 @@ section.team > .content > .text > h1 {
   main p,
   main span {
     line-height: normal !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section.signup p {
+    font-size: var(--font-size-s) !important;
   }
 }
