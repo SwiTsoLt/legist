@@ -184,7 +184,7 @@ main > section.signup > a > .linkInner > p {
 /* Gallery */
 
 section.gallery {
-  height: 40vh;
+  height: 400px;
   padding: var(--padding-l) var(--padding-m);
 }
 
@@ -193,7 +193,7 @@ section.gallery > .galleryContainer {
   max-width: var(--max-width);
   height: 100%;
   border-radius: var(--border-radius);
-  padding: 8px 0;
+  padding: 8px var(--padding-m);
 }
 
 section.gallery > .galleryContainer > .galleryInner {
@@ -292,7 +292,8 @@ section.team > .content > .text > h1 {
 
 @media screen and (max-width: 700px) {
   section.signup p {
-    font-size: var(--font-size-m) !important;
+    font-size: var(--font-size-s) !important;
+    line-height: var(--line-height);
   }
 }
 

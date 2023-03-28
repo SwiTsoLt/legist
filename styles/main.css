@@ -658,7 +658,7 @@ section.diplomas
   }
 
   section.signup p {
-    font-size: var(--font-size-m) !important;
+    font-size: var(--font-size-s) !important;
   }
 
   section.team {

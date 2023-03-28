@@ -32,6 +32,7 @@ body::after {
   height: 100%;
   background-color: var(--black-wall);
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.5s ease;
 }
 
