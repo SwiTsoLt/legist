@@ -16,13 +16,17 @@ main {
 }
 
 main a, main p, main span{
-  font-size: var(--font-size-m);
   line-height: var(--line-height);
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main a {
+  border-bottom: 1px solid var(--main-color-green);
+  padding-bottom: 2px;
 }
 
 main a:hover {
-  color: var(--main-color-green);
+  border-color: var(--main-color-yellow);
 }
 
 main h1 {
@@ -90,11 +94,32 @@ main p {
 .avatar.degtyarev-sergey-ivanovich {
   background-image: url("../media/lawyers/degtyarev-sergey-ivanovich.jpg");
 }
+.avatar.martsinkevich-tatiana-alexandrovna {
+  background-image: url("../media/lawyers/martsinkevich-tatiana-alexandrovna.jpg");
+}
+.avatar.vovchinsky-maxim-gennadyevich {
+  background-image: url("../media/lawyers/vovchinsky-maxim-gennadyevich.jpg");
+}
+.avatar.nikolaev-andrei-nikolayevich {
+  background-image: url("../media/lawyers/nikolaev-andrei-nikolayevich.jpg");
+}
 .avatar.zylkova-tatiana-viktorovna {
   background-image: url("../media/lawyers/zylkova-tatiana-viktorovna.jpg");
 }
 .avatar.komel-vadim-gennadyevich {
   background-image: url("../media/lawyers/komel-vadim-gennadyevich.jpg");
+}
+.avatar.zhdanova-irina-alexandrovna {
+  background-image: url("../media/lawyers/zhdanova-irina-alexandrovna.jpg");
+  aspect-ratio: 6/7;
+}
+.avatar.tulyakova-nataliya-vladimirovna {
+  background-image: url("../media/lawyers/tulyakova-nataliya-vladimirovna.jpg");
+  aspect-ratio: 4/5;
+}
+.avatar.butko-anzhelika-anatolevna {
+  background-image: url("../media/lawyers/butko-anzhelika-anatolevna.jpg");
+  aspect-ratio: 6/7;
 }
 .avatar.nikolaev-andrei-nikolayevich {
   background-image: url("../media/lawyers/nikolaev-andrei-nikolayevich.jpg");

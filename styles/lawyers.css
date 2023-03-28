@@ -147,6 +147,19 @@ main p {
   opacity: 1;
 }
 
+.lawyerList > .lawyer:nth-child(1),
+.lawyerList > .lawyer:nth-child(2),
+.lawyerList > .lawyer:nth-child(3) {
+  flex: 1 0 30%;
+  background-position: top;
+}
+
+.lawyerList > .lawyer:nth-child(1):hover,
+.lawyerList > .lawyer:nth-child(2):hover,
+.lawyerList > .lawyer:nth-child(3):hover {
+  flex: 1 0 33%;
+}
+
 .lawyerList > .lawyer:nth-child(1) {
   background-image: url("../media/lawyers/kosik-vladimir-vasilyevich.jpg");
 }
@@ -154,12 +167,10 @@ main p {
   background-image: url("../media/lawyers/degtyarev-sergey-ivanovich.jpg");
 }
 .lawyerList > .lawyer:nth-child(3) {
-  background-image: url("../media/main/avatar.png");
-  background-size: contain;
+  background-image: url("../media/lawyers/martsinkevich-tatiana-alexandrovna.jpg");
 }
 .lawyerList > .lawyer:nth-child(4) {
-  background-image: url("../media/main/avatar.png");
-  background-size: contain;
+  background-image: url("../media/lawyers/vovchinsky-maxim-gennadyevich.jpg");
 }
 .lawyerList > .lawyer:nth-child(5) {
   background-image: url("../media/lawyers/zylkova-tatiana-viktorovna.jpg");
@@ -168,8 +179,7 @@ main p {
   background-image: url("../media/lawyers/komel-vadim-gennadyevich.jpg");
 }
 .lawyerList > .lawyer:nth-child(7) {
-  background-image: url("../media/main/avatar.png");
-  background-size: contain;
+  background-image: url("../media/lawyers/nikolaev-andrei-nikolayevich.jpg");
 }
 .lawyerList > .lawyer:nth-child(8) {
   background-image: url("../media/lawyers/hermenchuk-olga-nikolayevna.jpg");
@@ -185,6 +195,18 @@ main p {
 }
 .lawyerList > .lawyer:nth-child(12) {
   background-image: url("../media/lawyers/magaryan-ekaterina-pavlovna.jpg");
+}
+.lawyerList > .lawyer:nth-child(13) {
+  background-image: url("../media/lawyers/butko-anzhelika-anatolevna.jpg");
+  background-position: center -40px;
+}
+.lawyerList > .lawyer:nth-child(14) {
+  background-image: url("../media/lawyers/tulyakova-nataliya-vladimirovna.jpg");
+  background-position: center -20px;
+}
+.lawyerList > .lawyer:nth-child(15) {
+  background-image: url("../media/lawyers/zhdanova-irina-alexandrovna.jpg");
+  background-position: top;
 }
 
 @media screen and (max-width: 1000px) {
