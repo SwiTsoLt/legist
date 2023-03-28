@@ -450,6 +450,11 @@ nav.onscroll .logo::after {
   .nav_container {
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .nav_container::-webkit-scrollbar {
+    display: none;
   }
 
   .left {

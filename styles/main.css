@@ -400,7 +400,7 @@ section.diplomas {
   justify-content: center;
   align-items: center;
   grid-gap: var(--padding-m);
-  height: 40vh;
+  height: 400px;
   padding: var(--padding-l) var(--padding-m);
   padding-top: calc(var(--padding-l) * 1.5);
 }
