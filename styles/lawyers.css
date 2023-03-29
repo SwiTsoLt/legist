@@ -167,57 +167,57 @@ main p {
   background-image: url("../media/lawyers/degtyarev-sergey-ivanovich.jpg");
 }
 .lawyerList > .lawyer:nth-child(3) {
-  background-image: url("../media/lawyers/martsinkevich-tatiana-alexandrovna.jpg");
-}
-.lawyerList > .lawyer:nth-child(4) {
-  background-image: url("../media/lawyers/vovchinsky-maxim-gennadyevich.jpg");
-}
-.lawyerList > .lawyer:nth-child(5) {
-  background-image: url("../media/lawyers/zylkova-tatiana-viktorovna.jpg");
-}
-.lawyerList > .lawyer:nth-child(6) {
-  background-image: url("../media/lawyers/komel-vadim-gennadyevich.jpg");
-}
-.lawyerList > .lawyer:nth-child(7) {
-  background-image: url("../media/lawyers/nikolaev-andrei-nikolayevich.jpg");
-}
-.lawyerList > .lawyer:nth-child(8) {
-  background-image: url("../media/lawyers/hermenchuk-olga-nikolayevna.jpg");
-}
-.lawyerList > .lawyer:nth-child(9) {
-  background-image: url("../media/lawyers/pilinkevich-nikolay-nikolayevich.jpg");
-}
-.lawyerList > .lawyer:nth-child(10) {
-  background-image: url("../media/lawyers/avchinko-dmitry-leonidovich.jpg");
-}
-.lawyerList > .lawyer:nth-child(11) {
-  background-image: url("../media/lawyers/rapinchuk-anastasia-viktorovna.jpg");
-}
-.lawyerList > .lawyer:nth-child(12) {
-  background-image: url("../media/lawyers/magaryan-ekaterina-pavlovna.jpg");
-}
-.lawyerList > .lawyer:nth-child(13) {
   /* background-image: url("../media/lawyers/butko-anzhelika-anatolevna.jpg"); */
   /* background-position: center -40px; */
   background-image: url("../media/main/avatar.png");
   background-size: contain;
 }
-.lawyerList > .lawyer:nth-child(14) {
+.lawyerList > .lawyer:nth-child(4) {
+  background-image: url("../media/lawyers/martsinkevich-tatiana-alexandrovna.jpg");
+}
+.lawyerList > .lawyer:nth-child(5) {
   /* background-image: url("../media/lawyers/tulyakova-nataliya-vladimirovna.jpg");
   background-position: center -20px; */
   background-image: url("../media/main/avatar.png");
   background-size: contain;
 }
-.lawyerList > .lawyer:nth-child(15) {
+.lawyerList > .lawyer:nth-child(6) {
+  background-image: url("../media/lawyers/vovchinsky-maxim-gennadyevich.jpg");
+}
+.lawyerList > .lawyer:nth-child(7) {
+  background-image: url("../media/lawyers/zylkova-tatiana-viktorovna.jpg");
+}
+.lawyerList > .lawyer:nth-child(8) {
+  background-image: url("../media/lawyers/komel-vadim-gennadyevich.jpg");
+}
+.lawyerList > .lawyer:nth-child(9) {
   /* background-image: url("../media/lawyers/zhdanova-irina-alexandrovna.jpg");
   background-position: top; */
   background-image: url("../media/main/avatar.png");
   background-size: contain;
 }
+.lawyerList > .lawyer:nth-child(10) {
+  background-image: url("../media/lawyers/nikolaev-andrei-nikolayevich.jpg");
+}
+.lawyerList > .lawyer:nth-child(11) {
+  background-image: url("../media/lawyers/hermenchuk-olga-nikolayevna.jpg");
+}
+.lawyerList > .lawyer:nth-child(12) {
+  background-image: url("../media/lawyers/pilinkevich-nikolay-nikolayevich.jpg");
+}
+.lawyerList > .lawyer:nth-child(13) {
+  background-image: url("../media/lawyers/avchinko-dmitry-leonidovich.jpg");
+}
+.lawyerList > .lawyer:nth-child(14) {
+  background-image: url("../media/lawyers/rapinchuk-anastasia-viktorovna.jpg");
+}
+.lawyerList > .lawyer:nth-child(15) {
+  background-image: url("../media/lawyers/magaryan-ekaterina-pavlovna.jpg");
+}
 
-.lawyerList > .lawyer:nth-child(13) > a > p,
-.lawyerList > .lawyer:nth-child(14) > a > p,
-.lawyerList > .lawyer:nth-child(15) > a > p {
+.lawyerList > .lawyer:nth-child(3) > a > p,
+.lawyerList > .lawyer:nth-child(5) > a > p,
+.lawyerList > .lawyer:nth-child(9) > a > p {
   opacity: 1; 
 }
 
