@@ -110,16 +110,22 @@ main p {
   background-image: url("../media/lawyers/komel-vadim-gennadyevich.jpg");
 }
 .avatar.zhdanova-irina-alexandrovna {
-  background-image: url("../media/lawyers/zhdanova-irina-alexandrovna.jpg");
-  aspect-ratio: 6/7;
+  /* background-image: url("../media/lawyers/zhdanova-irina-alexandrovna.jpg");
+  aspect-ratio: 6/7; */
+  background-image: url("../media/main/avatar.png");
+  background-size: contain;
 }
 .avatar.tulyakova-nataliya-vladimirovna {
-  background-image: url("../media/lawyers/tulyakova-nataliya-vladimirovna.jpg");
-  aspect-ratio: 4/5;
+  /* background-image: url("../media/lawyers/tulyakova-nataliya-vladimirovna.jpg");
+  aspect-ratio: 4/5; */
+  background-image: url("../media/main/avatar.png");
+  background-size: contain;
 }
 .avatar.butko-anzhelika-anatolevna {
-  background-image: url("../media/lawyers/butko-anzhelika-anatolevna.jpg");
-  aspect-ratio: 6/7;
+  /* background-image: url("../media/lawyers/butko-anzhelika-anatolevna.jpg");
+  aspect-ratio: 6/7; */
+  background-image: url("../media/main/avatar.png");
+  background-size: contain;
 }
 .avatar.nikolaev-andrei-nikolayevich {
   background-image: url("../media/lawyers/nikolaev-andrei-nikolayevich.jpg");

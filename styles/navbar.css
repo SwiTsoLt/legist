@@ -28,6 +28,7 @@ nav {
 nav.onscroll {
   height: calc(var(--navbar-height) / 2 - var(--padding-s));
   background-color: var(--main-color-gray);
+  border-bottom: 2px solid var(--main-color-yellow);
   padding: 0;
 }
 
