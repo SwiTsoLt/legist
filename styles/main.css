@@ -76,6 +76,10 @@ header > .bg {
   padding: 0 var(--padding-m);
 }
 
+.textContainer > .text > h1 > span.red {
+  color: red;
+}
+
 .textContainer > .text > p {
   font-size: var(--font-size-m);
   text-align: justify;
