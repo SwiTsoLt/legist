@@ -95,9 +95,9 @@ header > .bg {
   padding-bottom: 0;
 }
 
-.textContainer > .text > h1 > span.red {
+.textContainer > .text > h1 > span.question {
   width: 100%;
-  color: red;
+  color: var(--main-color-green);
   background-color: #fff;
 }
 
@@ -151,7 +151,7 @@ header > .bg {
   display: flex;
   justify-content: right;
   align-items: center;
-  justify-self: center;
+  justify-self: right;
   grid-column: 2/3;
   grid-row: 1/6;
   width: auto;
@@ -159,6 +159,7 @@ header > .bg {
   max-height: 200px;
   aspect-ratio: 1/1;
   padding: 0;
+  margin-right: var(--padding-l);
 }
 
 .textContainer > .text > p.list > .titleLink > a {
