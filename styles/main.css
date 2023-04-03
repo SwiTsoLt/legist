@@ -91,6 +91,10 @@ header > .bg {
   padding: var(--padding-m);
 }
 
+.textContainer > .text > h1 > span:last-child {
+  padding-bottom: 0;
+}
+
 .textContainer > .text > h1 > span.red {
   width: 100%;
   color: red;
