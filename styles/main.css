@@ -88,7 +88,7 @@ header > .bg {
 }
 
 .textContainer > .text > h1 > span {
-  padding: var(--padding-m) 0;
+  padding: var(--padding-m);
 }
 
 .textContainer > .text > h1 > span.red {
@@ -714,7 +714,6 @@ section.diplomas
 
   header > .contentContainer > .textContainer > .text {
     border: none;
-    padding: var(--padding-m);
   }
 
   header p,
