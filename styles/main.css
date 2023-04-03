@@ -14,7 +14,6 @@ header {
   font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
   width: 100%;
   height: fit-content;
@@ -41,6 +40,7 @@ header > .bg {
   align-items: center;
   width: 100%;
   height: fit-content;
+  padding-top: var(--navbar-height);
 }
 
 .textContainer {
@@ -65,19 +65,36 @@ header > .bg {
   background-color: var(--black-wall);
   border: 4px solid var(--main-color-gray);
   color: var(--text-color-white);
-  padding: var(--padding-l);
 }
 
 .textContainer > .text > h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
   align-self: center;
-  width: fit-content;
   font-size: var(--font-size-xl);
   text-align: center;
+}
+
+.textContainer > .text > p, .textContainer > .text > .phonelink {
   padding: 0 var(--padding-m);
 }
 
+.textContainer > .text > p:last-child {
+  padding-bottom: var(--padding-m);
+}
+
+.textContainer > .text > h1 > span {
+  padding: var(--padding-m) 0;
+}
+
 .textContainer > .text > h1 > span.red {
+  width: 100%;
   color: red;
+  background-color: #fff;
 }
 
 .textContainer > .text > p {
@@ -91,7 +108,7 @@ header > .bg {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: var(--padding-s);
-  width: fit-content;
+  width: 100%;
 }
 
 .textContainer > .text > p.list > span {
@@ -130,17 +147,21 @@ header > .bg {
   display: flex;
   justify-content: right;
   align-items: center;
+  justify-self: center;
   grid-column: 2/3;
   grid-row: 1/6;
-  width: 100%;
+  width: auto;
   height: 100%;
+  max-height: 200px;
+  aspect-ratio: 1/1;
+  padding: 0;
 }
 
 .textContainer > .text > p.list > .titleLink > a {
-  width: auto;
+  width: 100%;
   height: 100%;
-  aspect-ratio: 1/1;
   background-image: url("../media/lawyers/martsinkevich-oleg-igorevich.jpg");
+  background-size: cover;
   border: 2px solid var(--text-color-white);
   border-radius: 50%;
   transition: border-color 0.5s ease-in-out;
@@ -641,12 +662,30 @@ section.diplomas
     height: 100px !important;
   }
 
+  .contentContainer {
+    padding: 0;
+  }
+
   .textContainer > .text > .phonelink {
     display: block;
   }
 
   .textContainer > .text > .phonelink > a > p {
     font-size: var(--font-size-m);
+  }
+
+  .textContainer > .text > p.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textContainer > .text > p.list > .titleLink {
+    display: flex;
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+    aspect-ratio: 1/1;
   }
 }
 
