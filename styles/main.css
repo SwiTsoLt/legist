@@ -80,7 +80,7 @@ header > .bg {
 }
 
 .textContainer > .text > p, .textContainer > .text > .phonelink {
-  padding: 0 var(--padding-m);
+  padding-left: var(--padding-m);
 }
 
 .textContainer > .text > p:last-child {
@@ -109,10 +109,12 @@ header > .bg {
 
 .textContainer > .text > p.list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: var(--padding-s);
+  grid-row-gap: var(--padding-s);
+  grid-column-gap: var(--padding-l);
   width: 100%;
+  height: fit-content;
 }
 
 .textContainer > .text > p.list > span {
@@ -137,43 +139,56 @@ header > .bg {
   background-position: center;
 }
 
-.textContainer > .text > p.list > span:nth-child(1)::before {
+.textContainer > .text > p.list > span:nth-child(2)::before {
   background-image: url("../media/consultation/certificate.svg");
 }
-.textContainer > .text > p.list > span:nth-child(2)::before {
+.textContainer > .text > p.list > span:nth-child(3)::before {
   background-image: url("../media/consultation/check-list.svg");
 }
-.textContainer > .text > p.list > span:nth-child(3)::before {
+.textContainer > .text > p.list > span:nth-child(4)::before {
   background-image: url("../media/consultation/time.svg");
 }
 
 .textContainer > .text > p.list > .titleLink {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   justify-self: right;
-  grid-column: 2/3;
-  grid-row: 1/6;
+  grid-column: 1/2;
+  grid-row: 1/4;
   width: auto;
   height: 100%;
+  min-height: 150px;
   max-height: 200px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 4/3;
   padding: 0;
-  margin-right: var(--padding-l);
 }
 
 .textContainer > .text > p.list > .titleLink > a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
   height: 100%;
   background-image: url("../media/lawyers/martsinkevich-oleg-igorevich.jpg");
   background-size: cover;
   border: 2px solid var(--text-color-white);
-  border-radius: 50%;
+  border-radius: var(--border-radius);
   transition: border-color 0.5s ease-in-out;
 }
 
 .textContainer > .text > p.list > .titleLink > a:hover {
   border-color: var(--main-color-yellow);
+}
+
+.textContainer > .text > p.list > .titleLink > a > span {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--black-wall);
+  font-size: var(--font-size-xs);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  line-height: var(--font-size-l);
+  padding: var(--padding-s);
 }
 
 .textContainer > .text > .phonelink {
@@ -691,6 +706,10 @@ section.diplomas
     height: auto;
     max-width: 200px;
     aspect-ratio: 1/1;
+  }
+
+  .textContainer > .text > p, .textContainer > .text > .phonelink {
+    padding-right: var(--padding-m);
   }
 }
 
