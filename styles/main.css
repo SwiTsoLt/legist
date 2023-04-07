@@ -198,7 +198,7 @@ header > .bg {
 .textContainer > .text > p.list > .titleLink > a > span {
   width: 100%;
   height: fit-content;
-  background-color: var(--black-wall);
+  background-color: var(--black-wall-darker);
   font-size: var(--font-size-s);
   line-height: var(--font-size-l);
   text-align: center;
