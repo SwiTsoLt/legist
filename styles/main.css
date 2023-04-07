@@ -169,10 +169,8 @@ header > .bg {
   justify-self: right;
   grid-column: 1/2;
   grid-row: 1/4;
-  width: auto;
-  height: 100%;
-  min-height: 250px;
-  max-height: 250px;
+  width: 300px;
+  height: auto;
   aspect-ratio: 4/3;
   padding: 0;
 }
@@ -725,10 +723,8 @@ section.diplomas
 
   .textContainer > .text > p.list > .titleLink {
     display: flex;
-    width: 50%;
+    width: 320px;
     height: auto;
-    max-width: 200px;
-    aspect-ratio: 1/1;
   }
 
   .textContainer > .text > p,
@@ -807,6 +803,27 @@ section.diplomas
   header .contentContainer > .textContainer > .text {
     height: 100%;
     min-height: inherit;
+  }
+
+  .textContainer > .text > p.list {
+    padding: 0;
+  }
+
+  .textContainer > .text > p.list > span {
+    padding: 0 var(--padding-m) 0 calc(var(--padding-m) * 2);
+    margin-left: var(--padding-m);
+  }
+
+  .textContainer > .text > p.list > .titleLink {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 var(--padding-s) 0;
+  }
+
+  .textContainer > .text > p.list > .titleLink > a {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
   }
 }
 
