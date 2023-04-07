@@ -81,11 +81,21 @@ header > .bg {
 
 .textContainer > .text > p,
 .textContainer > .text > .phonelink {
-  padding-left: var(--padding-m);
+  padding: 0 var(--padding-m);
 }
 
 .textContainer > .text > p:last-child {
   padding-bottom: var(--padding-m);
+}
+
+.textContainer > .text > p > a {
+  border-bottom: 1px solid var(--main-color-green);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.textContainer > .text > p > a:hover {
+  border-color: var(--main-color-yellow);
 }
 
 .textContainer > .text > h1 > span {
