@@ -255,7 +255,7 @@ nav.onscroll .logo::after {
 }
 
 .link:not(.phone) > a {
-  background-color: var(--black-wall-lighter);
+  background-color: var(--white-wall);
 }
 
 .link > a::after {

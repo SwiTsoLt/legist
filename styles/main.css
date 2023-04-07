@@ -29,7 +29,7 @@ header > .bg {
   height: 100%;
   background-image: url("../media/main/header.png");
   background-size: cover;
-  filter: brightness(0.9);
+  filter: brightness(0.7);
 }
 
 /* Text */
