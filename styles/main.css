@@ -29,7 +29,7 @@ header > .bg {
   height: 100%;
   background-image: url("../media/main/header.png");
   background-size: cover;
-  filter: brightness(0.7);
+  filter: brightness(0.9);
 }
 
 /* Text */
@@ -63,7 +63,6 @@ header > .bg {
   width: 100%;
   height: fit-content;
   background-color: var(--black-wall);
-  border: 4px solid var(--main-color-gray);
   color: var(--text-color-white);
 }
 
@@ -91,7 +90,7 @@ header > .bg {
 .textContainer > .text > p > a {
   border-bottom: 1px solid var(--main-color-green);
   padding-bottom: 2px;
-  transition: all 0.2s ease;
+  transition: border-color 0.4s ease;
 }
 
 .textContainer > .text > p > a:hover {
@@ -185,12 +184,11 @@ header > .bg {
   background-image: url("../media/lawyers/martsinkevich-oleg-igorevich.jpg");
   background-size: cover;
   border: 2px solid var(--text-color-white);
-  border-radius: var(--border-radius);
   transition: border-color 0.5s ease-in-out;
 }
 
 .textContainer > .text > p.list > .titleLink > a:hover {
-  border-color: var(--main-color-yellow);
+  border-color: var(--main-color-green);
 }
 
 .textContainer > .text > p.list > .titleLink > a > span {
@@ -207,7 +205,6 @@ header > .bg {
 
 .textContainer > .text > p.list > .titleLink > a > span:last-child {
   font-size: var(--font-size-s);
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
   font-weight: normal;
   padding: 0 var(--padding-s) var(--padding-s) var(--padding-s);
 }
