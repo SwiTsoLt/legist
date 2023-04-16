@@ -222,19 +222,24 @@ main p {
     height: 260px;
   }
 
-  .lawyerList {
-    grid-gap: var(--padding-m);
-  }
-
   .lawyerList > .lawyer {
     height: auto;
     min-width: 260px;
     aspect-ratio: 4/3;
-    border-radius: var(--border-radius);
+  }
+}
+
+@media screen and (max-width: 820px) {
+  main {
+    max-width: none;
+  }
+  
+  .lawyerListContainer {
+    padding-top: 0;
   }
 
-  .lawyerList > .lawyer > a > p {
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  .zav > .text {
+    padding: 0 var(--padding-m);
   }
 
   .zav > .avatar > a > p,
@@ -243,11 +248,21 @@ main p {
     opacity: 1;
     padding: var(--padding-m) 0;
   }
+
+  .lawyerList {
+    border-radius: 0;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+
   .zav > .avatar {
     width: 100%;
     height: auto;
+    border-radius: 0;
+  }
+
+  .zav > .avatar > a > p {
+    border-radius: 0;
   }
 }
