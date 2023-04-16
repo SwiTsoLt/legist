@@ -488,7 +488,8 @@ section.diplomas {
   justify-content: center;
   align-items: center;
   grid-gap: var(--padding-m);
-  height: 400px;
+  height: 70vw;
+  max-height: 400px;
   padding: var(--padding-l) var(--padding-m);
   padding-top: calc(var(--padding-l) * 1.5);
 }
@@ -737,8 +738,8 @@ section.diplomas
 }
 
 @media screen and (max-width: 800px) {
-  h1,
-  h2 {
+  main h1,
+  main h2 {
     font-size: var(--font-size-l) !important;
   }
 
