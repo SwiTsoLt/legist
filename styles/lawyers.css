@@ -47,7 +47,6 @@ main p {
   aspect-ratio: 4/3;
   background-image: url("../media/lawyers/martsinkevich-oleg-igorevich.jpg");
   background-size: cover;
-  border-radius: var(--border-radius);
 }
 
 .zav > .avatar > a {
@@ -71,7 +70,6 @@ main p {
   height: 100%;
   background-color: #00000080;
   opacity: 0;
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
   transition: opacity 0.8s ease;
 }
 
@@ -102,7 +100,6 @@ main p {
   width: 100%;
   height: fit-content;
   min-height: inherit;
-  border-radius: var(--border-radius);
   overflow: hidden;
 }
 
@@ -248,10 +245,6 @@ main p {
     opacity: 1;
     padding: var(--padding-m) 0;
   }
-
-  .lawyerList {
-    border-radius: 0;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -259,10 +252,5 @@ main p {
   .zav > .avatar {
     width: 100%;
     height: auto;
-    border-radius: 0;
-  }
-
-  .zav > .avatar > a > p {
-    border-radius: 0;
   }
 }
