@@ -63,7 +63,6 @@ header > .bg {
   width: 100%;
   height: fit-content;
   background-color: var(--black-wall);
-  color: var(--text-color-white);
 }
 
 .textContainer > .text > h1 {
@@ -88,13 +87,13 @@ header > .bg {
 }
 
 .textContainer > .text > p > a {
-  border-bottom: 1px solid var(--main-color-green);
+  border-bottom: 1px solid var(--main-color-yellow);
   padding-bottom: 2px;
   transition: border-color 0.4s ease;
 }
 
 .textContainer > .text > p > a:hover {
-  border-color: var(--main-color-yellow);
+  border-color: var(--main-color-white);
 }
 
 .textContainer > .text > h1 > span {
@@ -107,7 +106,7 @@ header > .bg {
 
 .textContainer > .text > h1 > span.question {
   width: 100%;
-  color: var(--main-color-green);
+  color: var(--text-color-black);
   background-color: #fff;
 }
 
@@ -118,11 +117,9 @@ header > .bg {
 }
 
 .textContainer > .text > p.list {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: var(--padding-s);
-  grid-column-gap: var(--padding-l);
+  display: flex;
+  flex-direction: column;
+  grid-gap: var(--padding-m);
   width: 100%;
   height: fit-content;
 }
@@ -151,13 +148,13 @@ header > .bg {
   background-position: center;
 }
 
-.textContainer > .text > p.list > span:nth-child(2)::before {
+.textContainer > .text > p.list > span:nth-child(1)::before {
   background-image: url("../media/consultation/certificate.svg");
 }
-.textContainer > .text > p.list > span:nth-child(3)::before {
+.textContainer > .text > p.list > span:nth-child(2)::before {
   background-image: url("../media/consultation/check-list.svg");
 }
-.textContainer > .text > p.list > span:nth-child(4)::before {
+.textContainer > .text > p.list > span:nth-child(3)::before {
   background-image: url("../media/consultation/time.svg");
 }
 
@@ -183,12 +180,12 @@ header > .bg {
   height: 100%;
   background-image: url("../media/lawyers/martsinkevich-oleg-igorevich.jpg");
   background-size: cover;
-  border: 2px solid var(--text-color-white);
+  border: 2px solid var(--main-color-white);
   transition: border-color 0.5s ease-in-out;
 }
 
 .textContainer > .text > p.list > .titleLink > a:hover {
-  border-color: var(--main-color-green);
+  border-color: var(--main-color-yellow);
 }
 
 .textContainer > .text > p.list > .titleLink > a > span {
@@ -224,7 +221,7 @@ header > .bg {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: var(--main-color-green);
+  background-color: var(--main-color-yellow);
   padding: var(--padding-m);
   overflow: hidden;
 }
@@ -264,7 +261,6 @@ header > .bg {
 }
 
 .textContainer > .text > .phonelink > a > p {
-  color: var(--text-color-white);
   font-weight: bold;
   font-size: var(--font-size-l);
   z-index: 1;
@@ -281,7 +277,7 @@ section {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--main-color-gray);
   padding: 0 var(--padding-m);
 }
 
@@ -303,7 +299,6 @@ section > .content > .text {
   height: fit-content;
   border: 4px solid var(--main-color-gray);
   font-size: var(--font-size-m);
-  color: var(--text-color-black);
   padding: var(--padding-l);
 }
 
@@ -328,7 +323,7 @@ section.team {
 }
 
 section.team > .content > .text {
-  border-color: var(--main-color-green);
+  border-color: var(--main-color-yellow);
   padding-top: calc(var(--padding-l) * 2);
 }
 
@@ -338,7 +333,7 @@ section.team > .content > .text > h1 {
   transform: translateY(
     calc(-100% - var(--padding-l) * 2 + var(--line-height) / 2)
   );
-  background-color: #fff;
+  background-color: var(--main-color-gray);
   line-height: var(--line-height);
 }
 
@@ -360,7 +355,7 @@ section.team > .content > .text > h1 {
   position: relative;
   width: 100%;
   height: fit-content;
-  background-color: var(--text-color-white);
+  background-color: var(--main-color-white);
   color: var(--text-color-black);
   font-weight: bold;
   overflow: hidden;
@@ -409,7 +404,7 @@ main > section.signup > a {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: var(--main-color-green);
+  background-color: var(--main-color-yellow);
   overflow: hidden;
 }
 
@@ -423,17 +418,18 @@ main > section.signup > a::before {
   height: auto;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background-color: transparent;
+  opacity: 0;
+  background-color: var(--main-color-gray-2);
   transition: all 0.5s ease-in-out;
 }
 
 main > section.signup > a:hover::before {
   transform: translate(-50%, -50%) scale(1);
-  background-color: var(--main-color-yellow);
+  opacity: 1;
 }
 
 main > section.signup > a:hover > .linkInner > p {
-  color: var(--text-color-black);
+  color: var(--main-color-white);
 }
 
 main > section.signup > a > .linkInner {
@@ -460,13 +456,13 @@ main > section.signup > a > .linkInner > .iconContainer > .icon {
   height: 100%;
   max-height: 40px;
   aspect-ratio: 1/1;
-  background-image: url("../media/navbar/phone-white.svg");
+  background-image: url("../media/navbar/phone-black.svg");
   transition: all 0.8s ease-in-out;
 }
 
 main > section.signup > a:hover > .linkInner > .iconContainer > .icon {
   transform: rotateY(360deg);
-  background-image: url("../media/navbar/phone-black.svg");
+  background-image: url("../media/navbar/phone-white.svg");
 }
 
 main > section.signup > a > .linkInner > p {
@@ -476,6 +472,7 @@ main > section.signup > a > .linkInner > p {
   width: fit-content;
   height: 100%;
   font-size: var(--font-size-l);
+  color: var(--text-color-black);
   transition: color 0.5s ease-in-out;
   z-index: 2;
 }
