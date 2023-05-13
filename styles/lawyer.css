@@ -216,10 +216,8 @@ main p {
 
 .galleryContainer::-webkit-scrollbar-track {
   background-color: var(--main-color-gray-2);
-  border-radius: var(--border-radius);
 }
 
 .galleryContainer::-webkit-scrollbar-thumb {
   background-color: var(--main-color-yellow);
-  border-radius: var(--border-radius);
 }
