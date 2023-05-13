@@ -211,11 +211,11 @@ main p {
 }
 
 .galleryContainer::-webkit-scrollbar {
-  height: 6px;
+  height: 4px;
 }
 
 .galleryContainer::-webkit-scrollbar-track {
-  background-color: var(--main-color-white);
+  background-color: var(--main-color-gray-2);
   border-radius: var(--border-radius);
 }
 
