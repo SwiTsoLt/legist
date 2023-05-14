@@ -285,7 +285,7 @@ section.team > .content > .text > h1 {
   }
 
   section > .content > .text {
-    border: none;
+    border: none !important;
     padding: var(--padding-m) !important;
   }
 

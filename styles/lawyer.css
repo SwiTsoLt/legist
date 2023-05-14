@@ -15,7 +15,9 @@ main {
   padding-top: var(--navbar-height);
 }
 
-main a, main p, main span{
+main a,
+main p,
+main span {
   line-height: var(--line-height);
   transition: all 0.2s ease;
 }
@@ -80,20 +82,23 @@ main p {
   padding: var(--padding-l) 0;
 }
 
-.text > p, h4 {
+.text > p,
+h4 {
   text-align: justify;
   line-height: var(--line-height);
 }
 
 .galleryContainer {
-  width: 100%;
+  width: auto;
+  max-width: var(--max-width);
   height: fit-content;
-  overflow: auto;
 }
 
 .gallery {
-  width: fit-content;
-  height: fit-content;
+  width: auto;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .imagesList {
@@ -101,10 +106,9 @@ main p {
   flex: none;
   scroll-snap-type: x mandatory;
   grid-gap: var(--padding-m);
-  width: 100%;
+  width: fit-content;
   min-width: 100%;
-  height: fit-content;
-  border-radius: var(--border-radius);
+  height: 100%;
   padding: 0 0 8px 0;
 }
 
@@ -205,19 +209,19 @@ main p {
     width: 100%;
     max-width: none;
     height: auto;
-    max-height: 400px;
+    max-height: 396px;
     border-radius: 0;
   }
 }
 
-.galleryContainer::-webkit-scrollbar {
+.gallery::-webkit-scrollbar {
   height: 4px;
 }
 
-.galleryContainer::-webkit-scrollbar-track {
+.gallery::-webkit-scrollbar-track {
   background-color: var(--main-color-gray-2);
 }
 
-.galleryContainer::-webkit-scrollbar-thumb {
+.gallery::-webkit-scrollbar-thumb {
   background-color: var(--main-color-yellow);
 }
