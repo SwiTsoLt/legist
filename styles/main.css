@@ -107,7 +107,7 @@ header > .bg {
 .textContainer > .text > h1 > span.question {
   width: 100%;
   color: var(--text-color-black);
-  background-color: #fff;
+  background-color: var(--main-color-white);
 }
 
 .textContainer > .text > p {
@@ -136,7 +136,7 @@ header > .bg {
 .textContainer > .text > p.list > span:not(.titleLink)::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: var(--padding-m);
   top: 50%;
   transform: translate(0, -50%);
   width: auto;
@@ -811,8 +811,7 @@ section.diplomas
   }
 
   .textContainer > .text > p.list > span {
-    padding: 0 var(--padding-m) 0 calc(var(--padding-m) * 2);
-    margin-left: var(--padding-m);
+    padding: 0 var(--padding-m) 0 calc(var(--padding-m) * 3);
   }
 
   .textContainer > .text > p.list > .titleLink {
