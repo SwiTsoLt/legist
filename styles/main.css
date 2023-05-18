@@ -130,7 +130,7 @@ header > .bg {
   position: relative;
   width: 100%;
   line-height: var(--line-height);
-  padding-left: calc(var(--padding-m) * 2);
+  padding-left: calc(var(--padding-m) * 3);
 }
 
 .textContainer > .text > p.list > span:not(.titleLink)::before {
