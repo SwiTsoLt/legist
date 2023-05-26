@@ -30,7 +30,7 @@ footer > .content {
   width: 100%;
   height: fit-content;
   border-bottom: 2px solid var(--main-color-yellow);
-  padding: var(--padding-l) 0;
+  padding: var(--padding-l) var(--padding-m);
 }
 
 .breadcrumbs > p {
@@ -69,7 +69,7 @@ footer > .content > .middle {
   width: 100%;
   height: 100%;
   border-bottom: 2px solid var(--main-color-yellow);
-  padding: var(--padding-l) 0;
+  padding: var(--padding-l) var(--padding-m);
 }
 
 footer > .content > .middle > .middleInner {
@@ -105,6 +105,12 @@ footer > .content > .middle > .middleInner > .right > ul > li:first-child {
   font-weight: bold;
   color: var(--main-color-green);
   padding-bottom: var(--padding-s);
+}
+
+footer > .content > .middle > .middleInner > .right > ul {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: var(--padding-m);
 }
 
 footer > .content > .bottom {

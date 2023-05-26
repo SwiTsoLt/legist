@@ -18,10 +18,12 @@ header {
   width: 100%;
   height: fit-content;
   min-height: 100vh;
+  /* background-color: var(--main-color-gray-2); */
   padding: var(--padding-m);
 }
 
 header > .bg {
+  /* display: none; */
   position: absolute;
   left: 0;
   top: 0;
@@ -250,7 +252,7 @@ header > .bg {
   width: auto;
   height: 100%;
   aspect-ratio: 1/1;
-  background-image: url("../media/navbar/phone-white.svg");
+  background-image: url("../media/navbar/phone-black.svg");
   z-index: 1;
   transition: all 0.5s ease-in-out;
 }
@@ -263,12 +265,18 @@ header > .bg {
 .textContainer > .text > .phonelink > a > p {
   font-weight: bold;
   font-size: var(--font-size-l);
+  color: var(--text-color-black);
   z-index: 1;
   transition: color 0.5s ease-in-out;
 }
 
 .textContainer > .text > .phonelink > a:hover > p {
   color: var(--text-color-black);
+}
+
+.phonelink > a > p,
+section.signup > a > .linkInner > p > span {
+  font-weight: bold;
 }
 
 section {
@@ -434,6 +442,7 @@ main > section.signup > a:hover > .linkInner > p {
 
 main > section.signup > a > .linkInner {
   display: flex;
+  grid-gap: var(--padding-m);
   width: fit-content;
   height: 100%;
   max-width: var(--max-width);
@@ -446,7 +455,6 @@ main > section.signup > a > .linkInner > .iconContainer {
   align-items: center;
   width: auto;
   height: 100%;
-  aspect-ratio: 1/1;
   padding: var(--padding-m) 0;
   z-index: 2;
 }
@@ -698,7 +706,8 @@ section.diplomas
     height: 100px !important;
   }
 
-  .contentContainer {
+  header,
+  header > .contentContainer {
     padding: 0;
   }
 
@@ -755,10 +764,11 @@ section.diplomas
   header {
     padding: 0;
     align-items: normal;
+    background-color: var(--main-color-gray-2);
   }
 
-  header > .contentContainer > .textContainer > .text {
-    border: none;
+  header > .bg {
+    display: none;
   }
 
   header p,
@@ -767,6 +777,17 @@ section.diplomas
   main span {
     font-size: var(--font-size-s) !important;
     line-height: var(--line-height) !important;
+  }
+
+  .textContainer, .textContainer > .text {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+  }
+
+  .phonelink > a > p,
+  section.signup > a > .linkInner > p {
+    font-size: var(--font-size-m) !important;
   }
 
   section.signup p {

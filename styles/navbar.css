@@ -330,9 +330,10 @@ nav.onscroll .logo > h1 {
   background-color: var(--main-color-gray);
   border-right: 2px solid var(--main-color-white);
   border-bottom: 2px solid var(--main-color-white);
+  border-left: 2px solid transparent;
   border-radius: 0 0 var(--border-radius) 0;
   padding: calc(var(--padding-s) / 2);
-  transition: border-color 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .toggleButton > button {
@@ -356,16 +357,19 @@ nav.onscroll .logo > h1 {
       transform: translateX(-100%);
       width: 100%;
       height: 100%;
-      max-width: calc(100vw - 50px);
       background-color: var(--main-color-gray);
-      border-right: 2px solid var(--main-color-white);
       overflow: visible;
+      padding: 0;
       transition: all 0.5s ease;
     }
 
     nav.active {
-      border-color: var(--main-color-yellow);
       transform: translateX(0);
+    }
+
+    nav.active > div.toggleButton {
+      border-color: transparent;
+      right: 0;
     }
 
     .nav_container {
