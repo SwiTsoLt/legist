@@ -39,12 +39,14 @@ main p {
   font-size: var(--font-size-m);
 }
 
-.container {
+main .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  grid-gap: var(--padding-m);
   width: 100%;
   height: 100%;
+  padding: var(--padding-m);
 }
 
 .avatarContainer {
@@ -54,8 +56,6 @@ main p {
   width: 100%;
   height: 100%;
   background-color: var(--main-color-gray);
-  padding: var(--padding-l) 0;
-  padding: var(--padding-l) var(--padding-m) 0 var(--padding-m);
 }
 
 .avatar {
@@ -164,8 +164,8 @@ h4 {
   background-image: url("../media/lawyers/butko-anzhelika-anatolevna.jpg");
   aspect-ratio: 6/7;
 }
-.avatar.nikolaev-andrei-nikolayevich {
-  background-image: url("../media/lawyers/nikolaev-andrei-nikolayevich.jpg");
+.avatar.pilinkevich-nikolay-nikolayevich {
+  background-image: url("../media/lawyers/pilinkevich-nikolay-nikolayevich.jpg");
 }
 .avatar.hermenchuk-olga-nikolayevna {
   background-image: url("../media/lawyers/hermenchuk-olga-nikolayevna.jpg");
