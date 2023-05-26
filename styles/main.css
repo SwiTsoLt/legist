@@ -702,13 +702,14 @@ section.diplomas
 /* Media */
 
 @media screen and (max-width: 1000px) {
-  section.signup {
-    height: 100px !important;
-  }
 
   header,
   header > .contentContainer {
     padding: 0;
+  }
+
+  section.signup {
+    display: none;
   }
 
   .textContainer > .text > .phonelink {
@@ -734,12 +735,6 @@ section.diplomas
   .textContainer > .text > p,
   .textContainer > .text > .phonelink {
     padding-right: var(--padding-m);
-  }
-}
-
-@media screen and (max-height: 500px) {
-  section.signup {
-    height: 100px !important;
   }
 }
 
